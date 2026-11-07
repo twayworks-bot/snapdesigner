@@ -1,0 +1,299 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 820" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css');
+      .title { font-family: 'Pretendard Variable', sans-serif; font-weight: 800; font-size: 24px; fill: #1E1B4B; }
+      .subtitle { font-family: 'Pretendard Variable', sans-serif; font-weight: 600; font-size: 14px; fill: #4F46E5; }
+      .panel-bg { fill: #FFFFFF; stroke: #1E1B4B; stroke-width: 3; rx: 18; }
+      .panel-header { font-family: 'Pretendard Variable', sans-serif; font-weight: 800; font-size: 15px; fill: #FFFFFF; }
+      .bubble { fill: #FFFBEB; stroke: #1E1B4B; stroke-width: 2.2; }
+      .bubble-text { font-family: 'Pretendard Variable', sans-serif; font-weight: 700; font-size: 13px; fill: #0F172A; }
+      .bubble-accent { font-family: 'Pretendard Variable', sans-serif; font-weight: 800; font-size: 13.5px; fill: #4F46E5; }
+      .caption-title { font-family: 'Pretendard Variable', sans-serif; font-weight: 800; font-size: 14px; fill: #1E1B4B; }
+      .caption-desc { font-family: 'Pretendard Variable', sans-serif; font-weight: 500; font-size: 12px; fill: #475569; }
+      .badge-text { font-family: 'Pretendard Variable', sans-serif; font-weight: 800; font-size: 11px; fill: #FFFFFF; }
+    </style>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#EEF2FF"/>
+      <stop offset="100%" stop-color="#F8FAFC"/>
+    </linearGradient>
+    <linearGradient id="head1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4F46E5"/>
+      <stop offset="100%" stop-color="#6366F1"/>
+    </linearGradient>
+    <linearGradient id="head2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#3B82F6"/>
+    </linearGradient>
+    <linearGradient id="head3" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#D97706"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+    <linearGradient id="head4" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#10B981"/>
+    </linearGradient>
+    <linearGradient id="head5" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#DB2777"/>
+      <stop offset="100%" stop-color="#EC4899"/>
+    </linearGradient>
+    <linearGradient id="head6" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1E1B4B"/>
+      <stop offset="100%" stop-color="#4F46E5"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Main Canvas Background -->
+  <rect width="1200" height="820" rx="24" fill="url(#bgGrad)" stroke="#C7D2FE" stroke-width="2"/>
+
+  <!-- Top Title Banner -->
+  <text x="600" y="42" text-anchor="middle" class="subtitle">THEWAYWORKS ARCHITECTURE PIPELINE CARTOON</text>
+  <text x="600" y="74" text-anchor="middle" class="title">"말 한마디(Vibe)가 어떻게 실제 마케팅 앱과 1인 스냅 컴퍼니가 될까요?"</text>
+
+  <!-- =======================================================================
+       PANEL 1: STEP 1 - VIBE REQUEST
+       ======================================================================= -->
+  <g transform="translate(30, 96)">
+    <rect width="360" height="330" class="panel-bg"/>
+    <path d="M 0 18 Q 0 0 18 0 L 342 0 Q 360 0 360 18 L 360 42 L 0 42 Z" fill="url(#head1)"/>
+    <text x="18" y="27" class="panel-header">1컷 · Vibe 요청 (말로 하는 기획)</text>
+
+    <!-- Speech Bubble -->
+    <rect x="22" y="56" width="316" height="62" rx="14" class="bubble"/>
+    <polygon points="150,118 165,118 155,134" fill="#FFFBEB" stroke="#1E1B4B" stroke-width="2.2"/>
+    <text x="180" y="80" text-anchor="middle" class="bubble-accent">"AI 1인 기업을 위한 소개·마케팅 앱 제작!"</text>
+    <text x="180" y="102" text-anchor="middle" class="bubble-text">복잡한 코딩 대신 원하는 걸 한 줄로 말해요!</text>
+
+    <!-- Cartoon Character: Solo Entrepreneur at Laptop -->
+    <circle cx="140" cy="180" r="28" fill="#FDE68A" stroke="#1E1B4B" stroke-width="2.5"/>
+    <!-- Hair -->
+    <path d="M 112 175 Q 120 142 155 150 Q 170 155 168 175" fill="#1E293B"/>
+    <!-- Eyes & Smile -->
+    <circle cx="132" cy="178" r="3" fill="#1E1B4B"/>
+    <circle cx="150" cy="178" r="3" fill="#1E1B4B"/>
+    <path d="M 133 190 Q 141 198 150 190" fill="none" stroke="#1E1B4B" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Body -->
+    <path d="M 105 245 Q 140 205 175 245 Z" fill="#6366F1" stroke="#1E1B4B" stroke-width="2.5"/>
+    <!-- Laptop -->
+    <rect x="170" y="195" width="76" height="50" rx="6" fill="#E2E8F0" stroke="#1E1B4B" stroke-width="2.5"/>
+    <circle cx="208" cy="220" r="8" fill="#4F46E5"/>
+    <!-- Flying Vibe Sparkles -->
+    <circle cx="285" cy="185" r="26" fill="#EEF2FF" stroke="#4F46E5" stroke-width="2" stroke-dasharray="4 3"/>
+    <text x="285" y="182" text-anchor="middle" class="bubble-accent" font-size="11">VIBE</text>
+    <text x="285" y="198" text-anchor="middle" class="caption-desc" font-size="10">한 줄 주문</text>
+
+    <!-- Bottom Caption Box -->
+    <rect x="14" y="256" width="332" height="60" rx="10" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5"/>
+    <text x="26" y="278" class="caption-title">① 출발점: "AI 1인 기업 마케팅 앱 제작"</text>
+    <text x="26" y="299" class="caption-desc">두꺼운 기획서 없이 사장님의 아이디어를 평소 말하듯 던집니다.</text>
+  </g>
+
+  <!-- =======================================================================
+       PANEL 2: STEP 2 - SCENARIO & LOGICAL WIRING
+       ======================================================================= -->
+  <g transform="translate(420, 96)">
+    <rect width="360" height="330" class="panel-bg"/>
+    <path d="M 0 18 Q 0 0 18 0 L 342 0 Q 360 0 360 18 L 360 42 L 0 42 Z" fill="url(#head2)"/>
+    <text x="18" y="27" class="panel-header">2컷 · 마케팅 시나리오 &amp; Logical Wiring</text>
+
+    <!-- Speech Bubble -->
+    <rect x="22" y="56" width="316" height="56" rx="14" class="bubble"/>
+    <text x="180" y="79" text-anchor="middle" class="bubble-accent">"성공하는 마케팅 흐름과 필요한 부품들을 설계 완료!"</text>
+    <text x="180" y="99" text-anchor="middle" class="bubble-text">단축링크 → 쇼츠영상 → 매거진 → 1초 신청 배선도</text>
+
+    <!-- Blueprint Diagram -->
+    <rect x="30" y="124" width="300" height="120" rx="12" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2"/>
+    <!-- 4 Lego Asset Blocks connected with dotted logical lines -->
+    <rect x="44" y="142" width="60" height="44" rx="8" fill="#2563EB"/>
+    <text x="74" y="162" text-anchor="middle" class="badge-text">단축URL</text>
+    <text x="74" y="177" text-anchor="middle" class="badge-text" font-size="9">ShortURL</text>
+
+    <line x1="104" y1="164" x2="120" y2="164" stroke="#1E1B4B" stroke-width="2.5" stroke-dasharray="3 3"/>
+
+    <rect x="120" y="142" width="60" height="44" rx="8" fill="#4F46E5"/>
+    <text x="150" y="162" text-anchor="middle" class="badge-text">영상합성</text>
+    <text x="150" y="177" text-anchor="middle" class="badge-text" font-size="9">FOTO</text>
+
+    <line x1="180" y1="164" x2="196" y2="164" stroke="#1E1B4B" stroke-width="2.5" stroke-dasharray="3 3"/>
+
+    <rect x="196" y="142" width="60" height="44" rx="8" fill="#0D9488"/>
+    <text x="226" y="162" text-anchor="middle" class="badge-text">매거진UI</text>
+    <text x="226" y="177" text-anchor="middle" class="badge-text" font-size="9">VOGUE:M</text>
+
+    <line x1="256" y1="164" x2="270" y2="164" stroke="#1E1B4B" stroke-width="2.5" stroke-dasharray="3 3"/>
+
+    <rect x="270" y="142" width="48" height="44" rx="8" fill="#EC4899"/>
+    <text x="294" y="162" text-anchor="middle" class="badge-text">1초인증</text>
+    <text x="294" y="177" text-anchor="middle" class="badge-text" font-size="9">Auth</text>
+
+    <text x="180" y="215" text-anchor="middle" class="bubble-accent" font-size="12">⚡ Logical Wiring (논리적 에셋 배선 설계도)</text>
+    <text x="180" y="233" text-anchor="middle" class="caption-desc" font-size="11">빈 껍데기 화면이 아니라 실제 작동할 부품들을 줄 세웁니다</text>
+
+    <!-- Bottom Caption Box -->
+    <rect x="14" y="256" width="332" height="60" rx="10" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5"/>
+    <text x="26" y="278" class="caption-title">② 마케팅 시나리오 &amp; 제작 Assets 논리 배선</text>
+    <text x="26" y="299" class="caption-desc">고객 유입부터 영상 시청·상담 신청까지 필요한 부품을 설계합니다.</text>
+  </g>
+
+  <!-- =======================================================================
+       PANEL 3: STEP 3 - DOMAIN KNOWLEDGE SYNTHESIS (WISDOM)
+       ======================================================================= -->
+  <g transform="translate(810, 96)">
+    <rect width="360" height="330" class="panel-bg"/>
+    <path d="M 0 18 Q 0 0 18 0 L 342 0 Q 360 0 360 18 L 360 42 L 0 42 Z" fill="url(#head3)"/>
+    <text x="18" y="27" class="panel-header">3컷 · 도메인 전문성·전략의 지식화 (Wisdom)</text>
+
+    <!-- Speech Bubble -->
+    <rect x="22" y="56" width="316" height="56" rx="14" class="bubble"/>
+    <text x="180" y="79" text-anchor="middle" class="bubble-accent">"대표님의 전문 문서와 전략을 AI 지혜 두뇌로!"</text>
+    <text x="180" y="99" text-anchor="middle" class="bubble-text">두 명의 검수원(규칙+AI)이 목차와 핵심 전략을 완벽 정리!</text>
+
+    <!-- Left: Raw Docs -->
+    <rect x="36" y="135" width="76" height="90" rx="8" fill="#F1F5F9" stroke="#64748B" stroke-width="2"/>
+    <text x="74" y="162" text-anchor="middle" class="caption-title" font-size="12">📄 전문 문서</text>
+    <text x="74" y="182" text-anchor="middle" class="caption-desc" font-size="11">사업전략 PDF</text>
+    <text x="74" y="200" text-anchor="middle" class="caption-desc" font-size="11">노하우·칼럼</text>
+
+    <!-- Arrow -->
+    <path d="M 120 180 L 146 180" stroke="#D97706" stroke-width="3" marker-end="url(#arrow)"/>
+    <polygon points="144,174 154,180 144,186" fill="#D97706"/>
+
+    <!-- Center: Wisdom Dual TOC Machine -->
+    <rect x="158" y="130" width="84" height="100" rx="12" fill="#FEF3C7" stroke="#D97706" stroke-width="2.5"/>
+    <text x="200" y="156" text-anchor="middle" class="caption-title" fill="#B45309" font-size="12">WISDOM</text>
+    <text x="200" y="176" text-anchor="middle" class="caption-desc" font-size="10">⚡규칙 검수원</text>
+    <text x="200" y="192" text-anchor="middle" class="caption-desc" font-size="10">🧠맥락 검수원</text>
+    <text x="200" y="212" text-anchor="middle" class="bubble-accent" font-size="10">교차 검증 완료!</text>
+
+    <polygon points="246,174 256,180 246,186" fill="#D97706"/>
+
+    <!-- Right: Glowing Wisdom Brain Asset -->
+    <circle cx="296" cy="180" r="36" fill="#F59E0B" stroke="#1E1B4B" stroke-width="2.5"/>
+    <text x="296" y="175" text-anchor="middle" class="badge-text" font-size="12">🧠 지혜 자산</text>
+    <text x="296" y="193" text-anchor="middle" class="badge-text" font-size="10">AI Assets</text>
+
+    <!-- Bottom Caption Box -->
+    <rect x="14" y="256" width="332" height="60" rx="10" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5"/>
+    <text x="26" y="278" class="caption-title">③ 전문 도메인 분야와 전략의 지식화 (Wisdom)</text>
+    <text x="26" y="299" class="caption-desc">내 폴더 속 문서들을 마케팅 앱이 바로 써먹는 지혜로 바꿉니다.</text>
+  </g>
+
+  <!-- =======================================================================
+       PANEL 4: STEP 4 - REAL AI WIRING (VAIYER)
+       ======================================================================= -->
+  <g transform="translate(30, 456)">
+    <rect width="360" height="330" class="panel-bg"/>
+    <path d="M 0 18 Q 0 0 18 0 L 342 0 Q 360 0 360 18 L 360 42 L 0 42 Z" fill="url(#head4)"/>
+    <text x="18" y="27" class="panel-header">4컷 · 실질적 AI Wiring (VAIYER 실제 배선)</text>
+
+    <!-- Speech Bubble -->
+    <rect x="22" y="56" width="316" height="56" rx="14" class="bubble"/>
+    <text x="180" y="79" text-anchor="middle" class="bubble-accent">"지혜 두뇌와 4대 엔진을 실제 서버에 찰칵! 연결!"</text>
+    <text x="180" y="99" text-anchor="middle" class="bubble-text">VAIYER가 전선을 꽂자마자 앱에 푸른 불이 켜집니다!</text>
+
+    <!-- Wiring Hub Graphic -->
+    <rect x="115" y="132" width="130" height="96" rx="14" fill="#065F46" stroke="#1E1B4B" stroke-width="2.5"/>
+    <text x="180" y="164" text-anchor="middle" class="badge-text" font-size="14">⚡ VAIYER</text>
+    <text x="180" y="184" text-anchor="middle" class="badge-text" font-size="11">실질적 AI Wiring</text>
+    <rect x="135" y="196" width="90" height="20" rx="10" fill="#10B981"/>
+    <text x="180" y="210" text-anchor="middle" class="badge-text" font-size="10">● 서버 개통 완료</text>
+
+    <!-- Left Plug: Wisdom -->
+    <rect x="26" y="155" width="66" height="50" rx="8" fill="#F59E0B" stroke="#1E1B4B" stroke-width="2"/>
+    <text x="59" y="184" text-anchor="middle" class="badge-text">Wisdom</text>
+    <line x1="92" y1="180" x2="115" y2="180" stroke="#F59E0B" stroke-width="5"/>
+
+    <!-- Right Plug: 4 Core Engines -->
+    <rect x="268" y="155" width="66" height="50" rx="8" fill="#4F46E5" stroke="#1E1B4B" stroke-width="2"/>
+    <text x="301" y="177" text-anchor="middle" class="badge-text">4대 부품</text>
+    <text x="301" y="192" text-anchor="middle" class="badge-text" font-size="9">영상·인증·URL</text>
+    <line x1="245" y1="180" x2="268" y2="180" stroke="#4F46E5" stroke-width="5"/>
+
+    <!-- Bottom Caption Box -->
+    <rect x="14" y="256" width="332" height="60" rx="10" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5"/>
+    <text x="26" y="278" class="caption-title">④ 실질적 AI Wiring (두뇌 + 부품 + 서버 결합)</text>
+    <text x="26" y="299" class="caption-desc">지식화된 도메인 자산과 미디어·인증 엔진을 실제 앱으로 배선합니다.</text>
+  </g>
+
+  <!-- =======================================================================
+       PANEL 5: STEP 5 - MARKETING SNACK APP DEPLOYED
+       ======================================================================= -->
+  <g transform="translate(420, 456)">
+    <rect width="360" height="330" class="panel-bg"/>
+    <path d="M 0 18 Q 0 0 18 0 L 342 0 Q 360 0 360 18 L 360 42 L 0 42 Z" fill="url(#head5)"/>
+    <text x="18" y="27" class="panel-header">5컷 · 1인 기업 마케팅 스낵 앱 배포!</text>
+
+    <!-- Speech Bubble -->
+    <rect x="22" y="56" width="316" height="56" rx="14" class="bubble"/>
+    <text x="180" y="79" text-anchor="middle" class="bubble-accent">"앱 설치 없이 카톡 링크만 누르면 바로 열려요!"</text>
+    <text x="180" y="99" text-anchor="middle" class="bubble-text">쇼츠 홍보 영상 + 모바일 회사소개서 + 1초 상담신청 완성!</text>
+
+    <!-- Smartphone Frame showing the Snack App -->
+    <rect x="130" y="120" width="100" height="128" rx="14" fill="#1E1B4B" stroke="#DB2777" stroke-width="3"/>
+    <rect x="138" y="130" width="84" height="106" rx="8" fill="#FFFFFF"/>
+    <rect x="144" y="136" width="72" height="38" rx="4" fill="#EC4899"/>
+    <text x="180" y="159" text-anchor="middle" class="badge-text" font-size="10">▶ 9:16 쇼츠</text>
+    <rect x="144" y="180" width="72" height="22" rx="4" fill="#EEF2FF"/>
+    <text x="180" y="195" text-anchor="middle" class="bubble-accent" font-size="9">전문가 칼럼·소개</text>
+    <rect x="144" y="207" width="72" height="22" rx="4" fill="#10B981"/>
+    <text x="180" y="222" text-anchor="middle" class="badge-text" font-size="9">1초 상담 신청 ✓</text>
+
+    <!-- Floating Badges -->
+    <rect x="28" y="155" width="90" height="44" rx="10" fill="#FDF2F8" stroke="#DB2777" stroke-width="1.5"/>
+    <text x="73" y="175" text-anchor="middle" class="bubble-accent" fill="#DB2777" font-size="11">설치 ZERO</text>
+    <text x="73" y="191" text-anchor="middle" class="caption-desc" font-size="10">웹 링크 즉시실행</text>
+
+    <rect x="242" y="155" width="90" height="44" rx="10" fill="#ECFDF5" stroke="#10B981" stroke-width="1.5"/>
+    <text x="287" y="175" text-anchor="middle" class="bubble-accent" fill="#059669" font-size="11">유지비 ZERO</text>
+    <text x="287" y="191" text-anchor="middle" class="caption-desc" font-size="10">스낵처럼 가볍게</text>
+
+    <!-- Bottom Caption Box -->
+    <rect x="14" y="256" width="332" height="60" rx="10" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5"/>
+    <text x="26" y="278" class="caption-title">⑤ 1인 기업을 위한 회사 소개·마케팅 앱 배포</text>
+    <text x="26" y="299" class="caption-desc">외주 개발 수개월 걸리던 앱이 링크 하나로 즉시 배포됩니다.</text>
+  </g>
+
+  <!-- =======================================================================
+       PANEL 6: STEP 6 - SNAP COMPANY COMPLETION
+       ======================================================================= -->
+  <g transform="translate(810, 456)">
+    <rect width="360" height="330" class="panel-bg"/>
+    <path d="M 0 18 Q 0 0 18 0 L 342 0 Q 360 0 360 18 L 360 42 L 0 42 Z" fill="url(#head6)"/>
+    <text x="18" y="27" class="panel-header">6컷 · 스낵 앱들이 모여 '1인 스냅 컴퍼니' 완성!</text>
+
+    <!-- Speech Bubble -->
+    <rect x="22" y="56" width="316" height="56" rx="14" class="bubble"/>
+    <text x="180" y="79" text-anchor="middle" class="bubble-accent">"스낵 앱을 하나씩 더 붙였더니 1인 기업 완성!"</text>
+    <text x="180" y="99" text-anchor="middle" class="bubble-text">홍보·마케팅·예약·투표·연구소가 혼자서도 다 돌아가요!</text>
+
+    <!-- Snap Company Smart Tent / Puzzle Grid -->
+    <rect x="30" y="124" width="300" height="120" rx="14" fill="#1E1B4B"/>
+    <text x="180" y="148" text-anchor="middle" class="badge-text" fill="#FCD34D" font-size="13">⛺ 나의 1인 SNAP COMPANY (스마트 기업 완성!)</text>
+
+    <!-- 4 Department Snack App Blocks inside Snap Company -->
+    <rect x="44" y="160" width="64" height="66" rx="8" fill="#4F46E5"/>
+    <text x="76" y="182" text-anchor="middle" class="badge-text" font-size="11">🏢 홍보팀</text>
+    <text x="76" y="200" text-anchor="middle" class="badge-text" font-size="9">회사소개 앱</text>
+    <text x="76" y="215" text-anchor="middle" class="badge-text" font-size="9">VOGUE:M</text>
+
+    <rect x="114" y="160" width="64" height="66" rx="8" fill="#EC4899"/>
+    <text x="146" y="182" text-anchor="middle" class="badge-text" font-size="11">📣 마케팅팀</text>
+    <text x="146" y="200" text-anchor="middle" class="badge-text" font-size="9">쇼츠합성 앱</text>
+    <text x="146" y="215" text-anchor="middle" class="badge-text" font-size="9">단축링크</text>
+
+    <rect x="184" y="160" width="64" height="66" rx="8" fill="#10B981"/>
+    <text x="216" y="182" text-anchor="middle" class="badge-text" font-size="11">🤝 영업팀</text>
+    <text x="216" y="200" text-anchor="middle" class="badge-text" font-size="9">상담예약 앱</text>
+    <text x="216" y="215" text-anchor="middle" class="badge-text" font-size="9">1초 인증</text>
+
+    <rect x="254" y="160" width="62" height="66" rx="8" fill="#F59E0B"/>
+    <text x="285" y="182" text-anchor="middle" class="badge-text" font-size="11">🧠 연구소</text>
+    <text x="285" y="200" text-anchor="middle" class="badge-text" font-size="9">Wisdom</text>
+    <text x="285" y="215" text-anchor="middle" class="badge-text" font-size="9">설문·투표</text>
+
+    <!-- Bottom Caption Box -->
+    <rect x="14" y="256" width="332" height="60" rx="10" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5"/>
+    <text x="26" y="278" class="caption-title">⑥ 스낵 앱 퍼즐로 완성하는 1인 Snap Company</text>
+    <text x="26" y="299" class="caption-desc">필요한 앱을 하나씩 배선하며 혼자서도 완벽한 기업을 완성합니다.</text>
+  </g>
+</svg>

@@ -1,0 +1,80 @@
+{
+  "company_id": "twayworks",
+  "company_name": "TheWayWorks",
+  "company_name_ko": "더웨이웍스",
+  "tagline": "THE WAY WORKS · AI APP BUILDER",
+  "slogan": "말 한마디로 내 노하우를 연결하면, 오늘 바로 쓰는 나만의 비즈니스 앱이 됩니다. THE WAY WORKS.",
+  "sub_slogan": "어려운 코딩이나 수천만 원짜리 외주 개발은 잊으세요! 한 줄(Vibe)만 말하면, 대표님의 전문 문서·노하우(Wisdom)와 검증된 영상·인증·링크 기술 부품들을 레고처럼 배선(VAIYER)해 카톡으로 바로 여는 스낵 앱(Snack App)을 만들어 드립니다.",
+  "identity_summary": [
+    "AI 전문가(Expert) 기업",
+    "Vibe 코딩 플랫폼(VAIYER) 및 Snack App 개발 지원",
+    "1인 기업(Snap Company)을 위한 반복 업무 AI 자동화",
+    "기독교 청지기 정신 기반 스마트 처치 및 사회적 기여"
+  ],
+  "four_pillars": [
+    {
+      "order": 1,
+      "code": "VAIYER",
+      "name": "VAIYER (바이어)",
+      "metaphor": "신경망 & 레고 배선판",
+      "summary": "말 한마디(Vibe)를 실제 작동하는 기술 부품(로그인·영상합성·단축링크·DB)과 논리적·물리적으로 배선(Wiring)하고 컨테이너 서버로 개통(Ops)하는 3-Layer 플랫폼"
+    },
+    {
+      "order": 2,
+      "code": "SNACK_APP",
+      "name": "Snack App (스낵 앱)",
+      "metaphor": "부지런한 손발 & 도구",
+      "summary": "설치나 복잡한 가입 장벽 없이 카카오톡 웹 링크 하나로 회사 소개, 마케팅, 예약, 투표를 즉시 해결하고 목적이 끝나면 가볍게 비우는 일회성·목적형 미니 웹앱"
+    },
+    {
+      "order": 3,
+      "code": "WISDOM",
+      "name": "Wisdom (위즈덤)",
+      "metaphor": "똑똑한 두뇌 & 기억",
+      "summary": "폴더 속 비정형 문서(PDF, 기획서, 설교, 노하우)를 두 명의 검수원(Rule 파서 + LLM 파서 Dual TOC)으로 정밀 분해하고 관계 카드로 연결해 사업 지혜로 진화시키는 엔진"
+    },
+    {
+      "order": 4,
+      "code": "SNAP_COMPANY",
+      "name": "Snap Company (스냅 컴퍼니)",
+      "metaphor": "완성된 1인 스마트 기업",
+      "summary": "소개 앱(홍보팀), 영상 앱(마케팅팀), 예약 앱(영업팀), 지혜 보관함(연구소)을 레고처럼 하나씩 조립해 직원 없이도 대기업처럼 민첩하게 돌아가는 1인 스마트 조직"
+    }
+  ],
+  "core_engines": [
+    {
+      "id": "fotostream",
+      "name": "FOTOSTREAM",
+      "title": "사진→영상 자동 합성기",
+      "badge": "쇼츠·Full HD 자동합성",
+      "desc": "사진 최대 49장만 넣으면 바둑판 배열과 줌인·줌아웃 효과, 무료 배경음악(BGM)을 자동으로 입혀 모바일 9:16 쇼츠와 고화질 홍보 영상을 생성합니다.",
+      "images": ["img/snap-app-fotostream-01.png", "img/snap-app-fotostream-02.png"]
+    },
+    {
+      "id": "vdstream",
+      "name": "VDSTREAM",
+      "title": "기다림 없는 1초 즉시 재생기",
+      "badge": "버퍼링 ZERO (HLS)",
+      "desc": "영상을 가볍게 자동 변환하고 조각내어 전송(HLS)하여 다운로드 대기 없이 재생 버튼을 누르는 즉시 1초 만에 스트리밍합니다.",
+      "images": ["img/snap-app-vdstream-01.png", "img/snap-app-vdstream-02.png"]
+    },
+    {
+      "id": "shorturl",
+      "name": "ShortURL",
+      "title": "카톡 클릭률을 2배 높이는 마법 단축링크",
+      "badge": "오픈그래프 프리뷰 & 클릭 통계",
+      "desc": "긴 주소를 짧게 줄여주고 카카오톡 공유 시 직접 적은 매력적인 홍보 문구가 미리보기 창에 우선 노출되도록 커스터마이징합니다.",
+      "images": ["img/snap-app-shorturl-01.png"]
+    },
+    {
+      "id": "auth",
+      "name": "Proxy Auth",
+      "title": "아이디·비번 없는 1초 전화번호 인증",
+      "badge": "가입 이탈 방지",
+      "desc": "복잡한 회원가입 없이 휴대폰 번호와 숫자 4자리(PIN)만으로 모든 스낵 앱을 프리패스로 이용하게 해주는 통합 인증 문지기입니다.",
+      "images": ["img/snap-app-autth-01.png"]
+    }
+  ],
+  "production_apps_count": 12,
+  "reference_domain": "holyseeds.thewayworks.net"
+}

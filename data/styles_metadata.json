@@ -1,0 +1,604 @@
+{
+  "project": "1인 기업 홈페이지 제작 디자인 스타일 Helper & 템플릿 패키지",
+  "version": "1.0.0",
+  "updated_at": "2026-10-29T23:16:00+09:00",
+  "total_styles": 10,
+  "styles": [
+    {
+      "id": "style-01-minimal-essential",
+      "order": 1,
+      "name_ko": "미니멀 에센셜",
+      "name_en": "Minimal Essential",
+      "tagline": "불필요한 장식을 덜어내고 본질과 전문성에 집중하는 정제된 스타일",
+      "target_businesses": [
+        "경영/전략 컨설턴트",
+        "건축/인테리어 디자이너",
+        "포토그래퍼/사진 스튜디오",
+        "프리미엄 1인 브랜드",
+        "작가/에디터"
+      ],
+      "template_definition": {
+        "layout_structure": "12컬럼 비대칭 그리드, 전체 화면의 40% 이상 여백(Whitespace) 유지, 섹션 간 패딩 120px 이상",
+        "hero_style": "좌측 대형 핵심 슬로건 타이포그래피 + 우측 여백 또는 단일 고해상도 오브제 이미지, 절제된 단일 텍스트 링크형 CTA",
+        "ui_components": {
+          "border_radius": "0px ~ 2px",
+          "border_style": "1px solid #E5E5E5",
+          "shadow_style": "none (그림자 배제, 여백과 실선으로 구획)",
+          "interaction": "미세한 밑줄 확장 및 0.3s 오파시티 트랜지션"
+        },
+        "recommended_sections": [
+          "Hero: 핵심 철학 슬로건",
+          "About: 1인 대표 철학 및 약력",
+          "Selected Works: 대표 포트폴리오 3~4선",
+          "Service Process: 간결한 3단계 프로세스",
+          "Contact: 미니멀 1:1 문의 폼"
+        ]
+      },
+      "identity": {
+        "adjectives": ["절제된", "명료한", "본질적인", "차분한", "신뢰감 있는", "세련된"],
+        "adjectives_en": ["Restrained", "Clear", "Essential", "Calm", "Trustworthy", "Sophisticated"],
+        "verbs": ["정제하다", "집중하다", "비우다", "증명하다", "정돈하다"],
+        "verbs_en": ["Refine", "Focus", "Simplify", "Prove", "Organize"],
+        "tone_and_manner": "수식어를 최소화한 단정하고 확신에 찬 어조. 과장된 광고 문구 대신 사실과 결과물 중심의 담백한 메시지 전달.",
+        "sample_copy": "복잡함을 걷어낸 자리, 오직 비즈니스의 본질만 남깁니다."
+      },
+      "colors": {
+        "primary": "#111111",
+        "secondary": "#555555",
+        "accent": "#2B4C7E",
+        "background": "#FAFAFA",
+        "surface": "#FFFFFF",
+        "text_main": "#111111",
+        "text_muted": "#666666",
+        "border": "#E5E5E5",
+        "color_scheme": "light"
+      },
+      "typography": {
+        "heading_font": "Pretendard, Inter, sans-serif",
+        "body_font": "Pretendard, sans-serif",
+        "accent_font": "Cormorant Garamond, serif",
+        "heading_weight": "500",
+        "body_weight": "400",
+        "letter_spacing": "-0.03em",
+        "line_height": "1.75"
+      }
+    },
+    {
+      "id": "style-02-tech-neobrutalism",
+      "order": 2,
+      "name_ko": "테크 네오 브루탈리즘",
+      "name_en": "Tech Neo-Brutalism",
+      "tagline": "강렬한 보더와 대담한 원색 대비로 시선을 단숨에 사로잡는 개성파 스타일",
+      "target_businesses": [
+        "인디 해커 (Indie Hacker)",
+        "1인 개발자/솔루션 빌더",
+        "크리에이티브 디렉터",
+        "그로스/마케팅 해커",
+        "뉴스레터/미디어 운영자"
+      ],
+      "template_definition": {
+        "layout_structure": "모듈형 박스 그리드(Boxed Grid), 모든 섹션과 카드가 명확한 검은색 외곽선으로 구획됨",
+        "hero_style": "초대형 볼드 타이틀 + 스티커형 뱃지 UI + 하드 섀도우가 적용된 즉각적인 액션 버튼 및 인터랙티브 마키(Marquee) 텍스트 배너",
+        "ui_components": {
+          "border_radius": "8px",
+          "border_style": "3px solid #000000",
+          "shadow_style": "5px 5px 0px #000000",
+          "interaction": "호버 시 translate(3px, 3px)와 함께 그림자가 줄어들며 물리적으로 버튼이 눌리는 효과"
+        },
+        "recommended_sections": [
+          "Marquee Banner: 강렬한 한 줄 공지/슬로건",
+          "Hero: 돌직구 문제 제기 & 즉시 시작 CTA",
+          "Feature Stickers: 핵심 강점 4가지 박스",
+          "Live Demo / Pricing: 명확한 패키지 가격표",
+          "FAQ Accordion: 자주 묻는 질문",
+          "Bold CTA: 행동 유도 배너"
+        ]
+      },
+      "identity": {
+        "adjectives": ["대담한", "파격적인", "직관적인", "에너지 넘치는", "솔직한", "영리한"],
+        "adjectives_en": ["Bold", "Unconventional", "Direct", "Energetic", "Raw", "Witty"],
+        "verbs": ["타파하다", "돌직구를 던지다", "실험하다", "각인시키다", "실행하다"],
+        "verbs_en": ["Disrupt", "Strike", "Experiment", "Imprint", "Execute"],
+        "tone_and_manner": "군더더기 없이 직설적이고 위트 있는 대화체. 고객의 페인포인트를 정면으로 찌르고 즉각적인 행동을 유도하는 어조.",
+        "sample_copy": "뻔한 템플릿은 잊으세요. 클릭 한 번으로 당신의 아이디어를 바로 런칭합니다."
+      },
+      "colors": {
+        "primary": "#FF5722",
+        "secondary": "#A3E635",
+        "accent": "#3B82F6",
+        "background": "#FFFDF5",
+        "surface": "#FFFFFF",
+        "text_main": "#000000",
+        "text_muted": "#262626",
+        "border": "#000000",
+        "color_scheme": "light"
+      },
+      "typography": {
+        "heading_font": "'Gmarket Sans', 'Space Grotesk', sans-serif",
+        "body_font": "Pretendard, 'IBM Plex Sans KR', sans-serif",
+        "accent_font": "'JetBrains Mono', monospace",
+        "heading_weight": "800",
+        "body_weight": "500",
+        "letter_spacing": "-0.02em",
+        "line_height": "1.6"
+      }
+    },
+    {
+      "id": "style-03-warm-artisan",
+      "order": 3,
+      "name_ko": "웜 아티장 & 내추럴",
+      "name_en": "Warm Artisan & Natural",
+      "tagline": "따뜻한 대지의 색감과 장인정신이 느껴지는 감성적이고 인간적인 스타일",
+      "target_businesses": [
+        "공방/핸드메이드 브랜드",
+        "베이커리/로스터리 카페",
+        "심리상담/마인드풀니스 코칭",
+        "요가/필라테스/웰니스 스튜디오",
+        "플로리스트/조경 스튜디오"
+      ],
+      "template_definition": {
+        "layout_structure": "스토리텔링형 싱글 컬럼 & 2컬럼 교차 레이아웃, 부드러운 곡선 및 아치형(Arch) 이미지 마스크 활용",
+        "hero_style": "감성적인 작업 과정 또는 공간 사진 + 명조(Serif) 계열의 서정적인 헤드라인 + 부드러운 알약형(Pill) CTA 버튼",
+        "ui_components": {
+          "border_radius": "20px (이미지 아치형 120px 120px 16px 16px)",
+          "border_style": "1px solid #E2D9CC",
+          "shadow_style": "0 10px 30px rgba(140, 90, 60, 0.06)",
+          "interaction": "은은하고 부드러운 페이드인 및 따뜻한 색조 전환"
+        },
+        "recommended_sections": [
+          "Hero: 공간과 브랜드 무드 소개",
+          "Brand Story: 대표의 철학과 시작 이야기",
+          "Craftsmanship / Program: 정성스러운 서비스/제품 안내",
+          "Mood Gallery: 작업 과정 및 감성 갤러리",
+          "Voices: 고객의 따뜻한 후기",
+          "Reservation & Location: 오시는 길 및 예약 문의"
+        ]
+      },
+      "identity": {
+        "adjectives": ["따뜻한", "정성스러운", "자연스러운", "진정성 있는", "평온한", "다정한"],
+        "adjectives_en": ["Warm", "Crafted", "Organic", "Authentic", "Serene", "Gentle"],
+        "verbs": ["빚어내다", "보듬다", "스며들다", "치유하다", "연결하다"],
+        "verbs_en": ["Craft", "Nurture", "Permeate", "Heal", "Connect"],
+        "tone_and_manner": "한 편의 에세이나 편지를 읽는 듯 부드럽고 공감 어린 어조. 결과물뿐 아니라 만드는 과정의 정성과 철학을 이야기함.",
+        "sample_copy": "느리지만 바르게, 당신의 일상에 따뜻한 온기를 빚어냅니다."
+      },
+      "colors": {
+        "primary": "#8C5A3C",
+        "secondary": "#5F6F52",
+        "accent": "#D4A373",
+        "background": "#F7F4EF",
+        "surface": "#EFECE6",
+        "text_main": "#2C2520",
+        "text_muted": "#6E6259",
+        "border": "#E2D9CC",
+        "color_scheme": "light"
+      },
+      "typography": {
+        "heading_font": "MaruBuri, 'Gowun Batang', 'Playfair Display', serif",
+        "body_font": "Pretendard, 'Gowun Dodum', sans-serif",
+        "accent_font": "'Playfair Display', serif",
+        "heading_weight": "600",
+        "body_weight": "400",
+        "letter_spacing": "-0.01em",
+        "line_height": "1.8"
+      }
+    },
+    {
+      "id": "style-04-modern-trust-corporate",
+      "order": 4,
+      "name_ko": "모던 트러스트 코퍼레이트",
+      "name_en": "Modern Trust Corporate",
+      "tagline": "대기업 수준의 탄탄한 신뢰감과 체계적인 전문성을 보여주는 B2B 특화 스타일",
+      "target_businesses": [
+        "세무사/회계사/변호사/노무사",
+        "특허법률/행정사 사무소",
+        "B2B 기술 및 경영 컨설팅",
+        "기업 교육 강사/HR 파트너",
+        "전문 번역/통역 에이전시"
+      ],
+      "template_definition": {
+        "layout_structure": "정교한 12컬럼 표준 그리드, 상단 고정형(Sticky) 네비게이션 바 + 우측 상단 '무료 상담 신청' CTA 고정",
+        "hero_style": "신뢰감을 주는 네이비/화이트 투톤 배너 + 핵심 성과 지표(숫자 카운터: 누적 자문 건수, 고객 만족도 등) + 즉각적인 상담 예약 버튼",
+        "ui_components": {
+          "border_radius": "8px",
+          "border_style": "1px solid #E2E8F0",
+          "shadow_style": "0 4px 20px rgba(15, 23, 42, 0.06)",
+          "interaction": "깔끔한 보더 컬러 강조 및 카드 호버 시 미세한 상향 이동(-4px)"
+        },
+        "recommended_sections": [
+          "Hero & Key Metrics: 핵심 신뢰 지표 요약",
+          "Why Us: 3대 핵심 경쟁력 및 차별점",
+          "Service Areas: 분야별 전문 자문/서비스 카드",
+          "Track Record: 주요 수행 실적 및 고객사 사례",
+          "Representative Profile: 대표 전문가 약력 및 자격",
+          "Consultation Form: 빠른 상담 및 견적 신청"
+        ]
+      },
+      "identity": {
+        "adjectives": ["신뢰할 수 있는", "체계적인", "전문적인", "검증된", "명확한", "안정적인"],
+        "adjectives_en": ["Reliable", "Systematic", "Professional", "Proven", "Precise", "Stable"],
+        "verbs": ["해결하다", "보호하다", "검증하다", "분석하다", "이끌다"],
+        "verbs_en": ["Resolve", "Protect", "Verify", "Analyze", "Guide"],
+        "tone_and_manner": "객관적인 수치와 명확한 근거를 제시하는 논리적이고 정중한 격식체(~합니다, ~제공합니다).",
+        "sample_copy": "검증된 데이터와 10년의 실무 노하우로 귀사의 가장 확실한 비즈니스 파트너가 되겠습니다."
+      },
+      "colors": {
+        "primary": "#0F2942",
+        "secondary": "#2563EB",
+        "accent": "#0EA5E9",
+        "background": "#F8FAFC",
+        "surface": "#FFFFFF",
+        "text_main": "#0F172A",
+        "text_muted": "#475569",
+        "border": "#E2E8F0",
+        "color_scheme": "light"
+      },
+      "typography": {
+        "heading_font": "Pretendard, sans-serif",
+        "body_font": "Pretendard, 'Noto Sans KR', sans-serif",
+        "accent_font": "'Plus Jakarta Sans', Inter, sans-serif",
+        "heading_weight": "700",
+        "body_weight": "400",
+        "letter_spacing": "-0.02em",
+        "line_height": "1.65"
+      }
+    },
+    {
+      "id": "style-05-dark-future-saas",
+      "order": 5,
+      "name_ko": "다크 퓨처 & AI SaaS",
+      "name_en": "Dark Future & AI SaaS",
+      "tagline": "깊이감 있는 다크 모드와 네온 글로우로 혁신적인 기술력을 각인시키는 스타일",
+      "target_businesses": [
+        "AI 솔루션/자동화 빌더",
+        "SaaS 마이크로 스타트업",
+        "데이터 엔지니어/블록체인 개발",
+        "3D/모션 그래픽 스튜디오",
+        "테크/영상 프로덕션"
+      ],
+      "template_definition": {
+        "layout_structure": "벤토 그리드(Bento Grid) 기반의 기능 쇼케이스 레이아웃, 다크 배경 위 빛나는 글래스모피즘(Glassmorphism) 카드 배치",
+        "hero_style": "중앙 정렬 대형 그라데이션 텍스트 타이틀 + 배경 메쉬 그라데이션 광원 효과 + 제품 대시보드/코드 프리뷰 목업 프레임",
+        "ui_components": {
+          "border_radius": "14px",
+          "border_style": "1px solid rgba(255, 255, 255, 0.12)",
+          "shadow_style": "0 0 35px rgba(99, 102, 241, 0.25)",
+          "interaction": "네온 글로우 호버 효과 및 백드롭 블러(backdrop-filter: blur(12px))"
+        },
+        "recommended_sections": [
+          "Hero: 그라데이션 비전 선언 & 라이브 데모 CTA",
+          "Bento Grid: 핵심 기술 및 자동화 모듈 쇼케이스",
+          "Workflow Pipeline: 3단계 자동화 작동 원리",
+          "Performance Metrics: 압도적 속도/효율 비교",
+          "Pricing Tier: 구독/도입 플랜 안내",
+          "Glowing CTA: 미래 기술 도입 문의"
+        ]
+      },
+      "identity": {
+        "adjectives": ["혁신적인", "미래지향적인", "압도적인", "정밀한", "몰입감 있는", "세련된"],
+        "adjectives_en": ["Innovative", "Futuristic", "Cutting-edge", "High-precision", "Immersive", "Sleek"],
+        "verbs": ["가속하다", "자동화하다", "혁신하다", "확장하다", "초월하다"],
+        "verbs_en": ["Accelerate", "Automate", "Innovate", "Scale", "Transcend"],
+        "tone_and_manner": "기술적 우위와 미래 비전을 간결하고 임팩트 있게 선언하는 어조. 효율성 극대화와 스마트한 워크플로우를 강조.",
+        "sample_copy": "반복되는 업무는 AI에 맡기고, 당신은 다음 차원의 성장에만 집중하세요."
+      },
+      "colors": {
+        "primary": "#6366F1",
+        "secondary": "#A855F7",
+        "accent": "#06B6D4",
+        "background": "#090A0F",
+        "surface": "#12141D",
+        "text_main": "#F8FAFC",
+        "text_muted": "#94A3B8",
+        "border": "#262938",
+        "color_scheme": "dark"
+      },
+      "typography": {
+        "heading_font": "'Wanted Sans', 'Space Grotesk', Pretendard, sans-serif",
+        "body_font": "Pretendard, Inter, sans-serif",
+        "accent_font": "'JetBrains Mono', 'Fira Code', monospace",
+        "heading_weight": "700",
+        "body_weight": "400",
+        "letter_spacing": "-0.03em",
+        "line_height": "1.65"
+      }
+    },
+    {
+      "id": "style-06-editorial-magazine",
+      "order": 6,
+      "name_ko": "에디토리얼 매거진",
+      "name_en": "Editorial Magazine",
+      "tagline": "하이패션 매거진처럼 우아한 타이포그래피 대비와 레이아웃으로 안목을 드러내는 스타일",
+      "target_businesses": [
+        "브랜드/크리에이티브 디렉터",
+        "패션/뷰티 디자이너 브랜드",
+        "공간/전시 기획자 (큐레이터)",
+        "콘텐츠/매거진 스튜디오",
+        "퍼스널 브랜딩 컨설턴트"
+      ],
+      "template_definition": {
+        "layout_structure": "신문/잡지 편집 디자인에서 영감을 받은 다단 그리드, 세로형 텍스트 라벨, 정교한 헤어라인(1px) 구획",
+        "hero_style": "매거진 표지(Cover) 스타일 구성 — 상단 대형 마스트헤드(Masthead) 타이틀 + 비대칭 화보 이미지 + 세리프/산세리프가 교차하는 예술적 헤드라인",
+        "ui_components": {
+          "border_radius": "0px",
+          "border_style": "1px solid #141413",
+          "shadow_style": "none",
+          "interaction": "이미지 호버 시 부드러운 스케일업(1.03x) 및 이탤릭 텍스트 전환"
+        },
+        "recommended_sections": [
+          "Cover Hero: 매거진 이슈 스타일 메인",
+          "Editorial Note: 디렉터의 시선과 관점",
+          "Featured Archive: 넘버링된 프로젝트 카탈로그",
+          "Press & Exhibition: 미디어 보도 및 전시 이력",
+          "Inquire: 비즈니스 협업 및 프로젝트 의뢰"
+        ]
+      },
+      "identity": {
+        "adjectives": ["감각적인", "지적인", "우아한", "독창적인", "큐레이션된", "시대를 초월한"],
+        "adjectives_en": ["Sensory", "Intellectual", "Elegant", "Original", "Curated", "Timeless"],
+        "verbs": ["큐레이션하다", "조명하다", "서술하다", "정의하다", "매혹하다"],
+        "verbs_en": ["Curate", "Illuminate", "Narrate", "Define", "Captivate"],
+        "tone_and_manner": "깊이 있는 통찰과 미학적 관점이 담긴 지적인 문체. 단순한 서비스 판매가 아닌 '안목과 관점'을 제안하는 어조.",
+        "sample_copy": "트렌드는 사라지지만 고유한 관점은 남습니다. 당신의 브랜드에 서사를 입힙니다."
+      },
+      "colors": {
+        "primary": "#141413",
+        "secondary": "#7F1D1D",
+        "accent": "#A1887F",
+        "background": "#F4F1EA",
+        "surface": "#EBE6DC",
+        "text_main": "#141413",
+        "text_muted": "#57534E",
+        "border": "#141413",
+        "color_scheme": "light"
+      },
+      "typography": {
+        "heading_font": "'Playfair Display', MaruBuri, 'Nanum Myeongjo', serif",
+        "body_font": "Pretendard, SUIT, sans-serif",
+        "accent_font": "Inter, sans-serif",
+        "heading_weight": "600",
+        "body_weight": "400",
+        "letter_spacing": "-0.02em",
+        "line_height": "1.75"
+      }
+    },
+    {
+      "id": "style-07-pop-creative",
+      "order": 7,
+      "name_ko": "팝 크리에이티브 & 비비드 플레이",
+      "name_en": "Pop Creative & Vivid Play",
+      "tagline": "통통 튀는 컬러와 둥근 도형으로 친근함과 폭발적인 에너지를 전달하는 스타일",
+      "target_businesses": [
+        "유튜버/인플루언서/크리에이터",
+        "일러스트레이터/캐릭터 디자이너",
+        "이벤트/파티 플래너",
+        "키즈/취미 클래스/에듀테크",
+        "펫 비즈니스 & 트렌디 디저트샵"
+      ],
+      "template_definition": {
+        "layout_structure": "둥근 캡슐 및 클라우드 형태의 섹션 디바이더, 자유롭고 리듬감 있는 카드 그리드 배치",
+        "hero_style": "생동감 넘치는 컬러 블록 배경 + 캐릭터/인물 비주얼 + 말풍선(Speech Bubble) UI와 둥근 대형 캡슐 CTA 버튼",
+        "ui_components": {
+          "border_radius": "28px (버튼은 9999px 알약형)",
+          "border_style": "2px solid #1E1B4B",
+          "shadow_style": "0 8px 0px #1E1B4B",
+          "interaction": "탄성 있는 바운스(cubic-bezier) 스케일 업 애니메이션"
+        },
+        "recommended_sections": [
+          "Hero: 매력 발산 웰컴 인트로",
+          "Identity Chips: 나만의 매력 키워드 태그",
+          "Showroom: 인기 콘텐츠 & 작업물 쇼케이스",
+          "Package & Goods: 클래스/상품 패키지 안내",
+          "Fan Reactions: 찐팬/고객들의 생생한 후기",
+          "Fun Contact: 가볍고 즐거운 협업 문의"
+        ]
+      },
+      "identity": {
+        "adjectives": ["발랄한", "친근한", "유쾌한", "창의적인", "다채로운", "매력적인"],
+        "adjectives_en": ["Lively", "Friendly", "Playful", "Creative", "Colorful", "Charming"],
+        "verbs": ["즐기다", "상상하다", "반짝이다", "소통하다", "사로잡다"],
+        "verbs_en": ["Enjoy", "Imagine", "Sparkle", "Communicate", "Charm"],
+        "tone_and_manner": "친구에게 말하듯 반갑고 에너지 넘치는 구어체. 느낌표와 감탄사, 시각적 비유를 활용해 읽는 재미를 주는 어조.",
+        "sample_copy": "지루한 일상에 상큼한 아이디어를 팝! 터뜨려 드릴게요. 지금 바로 놀러 오세요!"
+      },
+      "colors": {
+        "primary": "#FF3366",
+        "secondary": "#FFCC00",
+        "accent": "#7C3AED",
+        "background": "#FFF9F5",
+        "surface": "#FFFFFF",
+        "text_main": "#1E1B4B",
+        "text_muted": "#4C1D95",
+        "border": "#1E1B4B",
+        "color_scheme": "light"
+      },
+      "typography": {
+        "heading_font": "'Gmarket Sans', 'Cafe24 Ssurround', Fredoka, sans-serif",
+        "body_font": "SUIT, Pretendard, sans-serif",
+        "accent_font": "'Gmarket Sans', sans-serif",
+        "heading_weight": "700",
+        "body_weight": "500",
+        "letter_spacing": "-0.01em",
+        "line_height": "1.65"
+      }
+    },
+    {
+      "id": "style-08-luxury-prestige",
+      "order": 8,
+      "name_ko": "럭셔리 프레스티지 & 노블",
+      "name_en": "Luxury Prestige & Noble",
+      "tagline": "딥 블랙과 샴페인 골드의 조화로 최상위 프리미엄 가치를 부여하는 하이엔드 스타일",
+      "target_businesses": [
+        "하이엔드 주얼리/시계/맞춤정장(Bespoke)",
+        "프라이빗 자산관리(PB)/고액 부동산 자문",
+        "VIP 의전/컨시어지 에이전시",
+        "프리미엄 에스테틱/프라이빗 클리닉",
+        "파인다이닝/프라이빗 다이닝 셰프"
+      ],
+      "template_definition": {
+        "layout_structure": "완벽한 대칭(Symmetry)과 여유로운 중앙 정렬 위주의 클래식 구도, 풀스크린 시네마틱 다크 배경",
+        "hero_style": "어두운 톤의 시네마틱 이미지 오버레이 + 중앙에 세련된 골드 세리프 타이틀과 얇은 선형 장식 + '프라이빗 예약(Private Booking)' 고스트 버튼",
+        "ui_components": {
+          "border_radius": "0px",
+          "border_style": "1px solid rgba(197, 160, 89, 0.35)",
+          "shadow_style": "0 20px 50px rgba(0, 0, 0, 0.7)",
+          "interaction": "느리고 우아한 골드 보더 빛 전환 (0.6s ease)"
+        },
+        "recommended_sections": [
+          "Cinematic Hero: 하이엔드 아우라 인트로",
+          "Heritage & Philosophy: 타협하지 않는 장인 철학",
+          "Bespoke Service: VIP 전용 프라이빗 프로그램",
+          "The Master: 대표 마스터 프로필 및 철학",
+          "Private Concierge: 1:1 비공개 예약 신청"
+        ]
+      },
+      "identity": {
+        "adjectives": ["독보적인", "품격 있는", "우아한", "정교한", "희소한", "기품 있는"],
+        "adjectives_en": ["Exclusive", "Prestigious", "Graceful", "Exquisite", "Rare", "Noble"],
+        "verbs": ["선사하다", "승화하다", "엄선하다", "완성하다", "예우하다"],
+        "verbs_en": ["Bestow", "Elevate", "Select", "Perfect", "Honor"],
+        "tone_and_manner": "고객을 VIP로 예우하는 최고 수준의 정중함과 절제된 자부심이 배어 있는 품격 있는 문체.",
+        "sample_copy": "오직 소수의 안목 있는 분들을 위해, 시간을 초월한 가치를 선사합니다."
+      },
+      "colors": {
+        "primary": "#C5A059",
+        "secondary": "#E5D3B3",
+        "accent": "#8B734B",
+        "background": "#0B0B0C",
+        "surface": "#141416",
+        "text_main": "#F5F3EF",
+        "text_muted": "#A39E93",
+        "border": "#3A3222",
+        "color_scheme": "dark"
+      },
+      "typography": {
+        "heading_font": "'Cormorant Garamond', Cinzel, MaruBuri, serif",
+        "body_font": "Pretendard, 'Noto Serif KR', sans-serif",
+        "accent_font": "Cinzel, serif",
+        "heading_weight": "400",
+        "body_weight": "300",
+        "letter_spacing": "0.05em",
+        "line_height": "1.8"
+      }
+    },
+    {
+      "id": "style-09-clean-growth-bento",
+      "order": 9,
+      "name_ko": "클린 그로스 & 스타트업 벤토",
+      "name_en": "Clean Growth & Startup Bento",
+      "tagline": "모던한 벤토 그리드와 상쾌한 컬러로 성장성과 스마트함을 어필하는 스타일",
+      "target_businesses": [
+        "퍼포먼스 마케터/그로스 컨설턴트",
+        "노코드/업무 자동화 컨설턴트",
+        "이커머스 브랜드 빌더/셀러 코치",
+        "온라인 부트캠프/직무 강의 크리에이터",
+        "커리어/이직 코치"
+      ],
+      "template_definition": {
+        "layout_structure": "화이트 & 쿨그레이 기반의 모던 벤토 그리드(Bento Grid) 레이아웃, 한눈에 들어오는 모듈형 요약 카드 배치",
+        "hero_style": "상단 소셜 프루프 알약 배지 + 명확한 가치 제안(Value Proposition) 타이틀 + 듀얼 CTA + 성장 지표 그래프 프리뷰",
+        "ui_components": {
+          "border_radius": "20px",
+          "border_style": "1px solid #E2E8F0",
+          "shadow_style": "0 10px 25px -5px rgba(15, 23, 42, 0.05)",
+          "interaction": "카드 호버 시 부드러운 테두리 하이라이트 및 미니 차트 애니메이션"
+        },
+        "recommended_sections": [
+          "Hero & Social Proof: 검증된 성과 요약",
+          "Problem & Solution: 기존 방식 vs 스마트 솔루션 비교",
+          "Bento Features: 6가지 핵심 성장 엔진 모듈",
+          "Before & After: 실제 고객 매출/효율 상승 데이터",
+          "Service Plans: 단계별 컨설팅/강의 패키지",
+          "Lead Magnet CTA: 무료 진단 리포트 및 상담 신청"
+        ]
+      },
+      "identity": {
+        "adjectives": ["스마트한", "효율적인", "실용적인", "투명한", "역동적인", "현대적인"],
+        "adjectives_en": ["Smart", "Efficient", "Practical", "Transparent", "Dynamic", "Modern"],
+        "verbs": ["성장시키다", "최적화하다", "달성하다", "전환하다", "체계화하다"],
+        "verbs_en": ["Grow", "Optimize", "Achieve", "Convert", "Structure"],
+        "tone_and_manner": "고객이 얻게 될 혜택(Benefit)과 투자 대비 효과(ROI)를 직관적이고 명쾌하게 설명하는 설득력 있는 어조.",
+        "sample_copy": "감에 의존하는 마케팅은 끝났습니다. 데이터로 증명하는 300% 매출 성장 공식을 만나보세요."
+      },
+      "colors": {
+        "primary": "#10B981",
+        "secondary": "#0F172A",
+        "accent": "#6366F1",
+        "background": "#FFFFFF",
+        "surface": "#F1F5F9",
+        "text_main": "#0F172A",
+        "text_muted": "#64748B",
+        "border": "#E2E8F0",
+        "color_scheme": "light"
+      },
+      "typography": {
+        "heading_font": "Pretendard, 'Plus Jakarta Sans', sans-serif",
+        "body_font": "Pretendard, sans-serif",
+        "accent_font": "'Plus Jakarta Sans', Inter, sans-serif",
+        "heading_weight": "800",
+        "body_weight": "500",
+        "letter_spacing": "-0.025em",
+        "line_height": "1.65"
+      }
+    },
+    {
+      "id": "style-10-retro-indie-analog",
+      "order": 10,
+      "name_ko": "레트로 인디 & 아날로그 바이브",
+      "name_en": "Retro Indie & Analog Vibe",
+      "tagline": "독립출판물과 빈티지 포스터의 감성으로 대체 불가능한 취향과 팬덤을 만드는 스타일",
+      "target_businesses": [
+        "독립출판사/독립서점",
+        "빈티지 편집샵/소품샵",
+        "인디 뮤지션/사운드 프로듀서",
+        "타투이스트/서브컬처 아티스트",
+        "독립 영화/다큐멘터리/로컬 큐레이터"
+      ],
+      "template_definition": {
+        "layout_structure": "빈티지 티켓, 스탬프, 색인 카드(Index Card), 포스터 구도를 모티브로 한 프레임형 레이아웃",
+        "hero_style": "복고풍 프레임 보더 안에 자리 잡은 강렬한 그래픽/필름 사진 + 레트로 디스플레이 타이포그래피 + 스탬프 모양의 배지",
+        "ui_components": {
+          "border_radius": "4px",
+          "border_style": "2px dashed #231F20 (외곽은 2px solid #231F20)",
+          "shadow_style": "3px 3px 0px #231F20",
+          "interaction": "스탬프 도장 효과 및 필름 그레인 질감 전환"
+        },
+        "recommended_sections": [
+          "Poster Hero: 타이틀 & 아트워크 포스터",
+          "Manifesto: 우리의 취향과 선언문",
+          "Catalog / Tracklist: 인덱스 카드 스타일 작업물 목록",
+          "Behind Archive: 제작 일지 및 비하인드 노트",
+          "Club & Letter: 뉴스레터 구독 및 작업 의뢰"
+        ]
+      },
+      "identity": {
+        "adjectives": ["독창적인", "향수를 자극하는", "개성 뚜렷한", "낭만적인", "독립적인", "아날로그적인"],
+        "adjectives_en": ["Unique", "Nostalgic", "Distinctive", "Romantic", "Independent", "Analog"],
+        "verbs": ["기록하다", "수집하다", "노래하다", "기억하다", "고수하다"],
+        "verbs_en": ["Archive", "Collect", "Sing", "Remember", "Stand by"],
+        "tone_and_manner": "주류에 편승하지 않는 자기만의 확고한 취향과 낭만을 담은 선언적(Manifesto)이고 개성 있는 문체.",
+        "sample_copy": "빠르게 소비되고 잊히는 것들 사이에서, 오래도록 손끝에 남는 이야기를 기록합니다."
+      },
+      "colors": {
+        "primary": "#C83E2B",
+        "secondary": "#1D4E4F",
+        "accent": "#D99B26",
+        "background": "#F2E9D8",
+        "surface": "#E6D9C2",
+        "text_main": "#231F20",
+        "text_muted": "#5C5346",
+        "border": "#231F20",
+        "color_scheme": "light"
+      },
+      "typography": {
+        "heading_font": "MaruBuri, Fraunces, Georgia, serif",
+        "body_font": "Pretendard, 'IBM Plex Sans KR', sans-serif",
+        "accent_font": "'Courier Prime', 'JetBrains Mono', monospace",
+        "heading_weight": "700",
+        "body_weight": "400",
+        "letter_spacing": "-0.01em",
+        "line_height": "1.7"
+      }
+    }
+  ]
+}

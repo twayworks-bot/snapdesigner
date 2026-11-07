@@ -1,0 +1,4160 @@
+/* ==========================================================================
+   Design Templates, Website Layouts & CI Helper Studio UI Stylesheet
+   (Isolated UI Controls + 10 Representative Domain Layout Patterns CSS)
+   ========================================================================== */
+
+.dh-studio-wrapper {
+  font-family: 'Pretendard Variable', 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  background: #0F172A;
+  color: #F8FAFC;
+  border-bottom: 2px solid #4F46E5;
+  position: relative;
+  z-index: 1200;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.28);
+}
+
+.dh-topbar {
+  max-width: 1420px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.dh-topbar-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.dh-studio-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: linear-gradient(135deg, #4F46E5 0%, #EC4899 100%);
+  color: #FFFFFF;
+  font-size: 0.73rem;
+  font-weight: 800;
+  padding: 5px 11px;
+  border-radius: 999px;
+  letter-spacing: 0.03em;
+}
+
+.dh-active-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  padding: 5px 11px;
+  border-radius: 8px;
+  font-size: 0.81rem;
+}
+
+.dh-active-info.dh-layout-badge-box {
+  background: rgba(16, 185, 129, 0.12);
+  border-color: rgba(52, 211, 153, 0.35);
+}
+
+.dh-swatch-group {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.dh-mini-swatch {
+  width: 13px;
+  height: 13px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  display: inline-block;
+}
+
+.dh-topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  flex-wrap: wrap;
+}
+
+.dh-ctrl-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 12px;
+  border-radius: 8px;
+  font-size: 0.79rem;
+  font-weight: 700;
+  color: #E2E8F0;
+  background: #1E293B;
+  border: 1px solid #334155;
+  cursor: pointer;
+  transition: all 0.18s ease;
+}
+
+.dh-ctrl-btn:hover,
+.dh-ctrl-btn.active {
+  background: #334155;
+  color: #FFFFFF;
+  border-color: #818CF8;
+}
+
+.dh-ctrl-btn.dh-btn-api {
+  background: rgba(16, 185, 129, 0.15);
+  border-color: rgba(16, 185, 129, 0.45);
+  color: #6EE7B7;
+}
+
+.dh-ctrl-btn.dh-btn-api:hover {
+  background: #059669;
+  color: #FFFFFF;
+}
+
+.dh-ctrl-btn.dh-btn-download {
+  background: linear-gradient(135deg, #4F46E5 0%, #2563EB 100%);
+  border-color: #6366F1;
+  color: #FFFFFF;
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.4);
+}
+
+.dh-ctrl-btn.dh-btn-download:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.1);
+}
+
+/* Dual Quick Switcher Strips (1. Design Styles / 2. Website Layouts) */
+.dh-quick-strip {
+  background: #131C31;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 6px 20px;
+}
+
+.dh-quick-strip.dh-layout-strip {
+  background: #0D1526;
+  border-top: 1px solid rgba(52, 211, 153, 0.16);
+}
+
+.dh-strip-row {
+  max-width: 1420px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dh-strip-label {
+  flex-shrink: 0;
+  font-size: 0.73rem;
+  font-weight: 800;
+  color: #A5B4FC;
+  background: rgba(99, 102, 241, 0.16);
+  border: 1px solid rgba(99, 102, 241, 0.35);
+  padding: 4px 9px;
+  border-radius: 6px;
+  min-width: 128px;
+  text-align: center;
+}
+
+.dh-strip-label.layout-lbl {
+  color: #6EE7B7;
+  background: rgba(16, 185, 129, 0.15);
+  border-color: rgba(16, 185, 129, 0.35);
+}
+
+.dh-quick-strip-inner {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  overflow-x: auto;
+  padding-bottom: 2px;
+  scrollbar-width: thin;
+  flex: 1;
+}
+
+.dh-style-chip,
+.dh-layout-chip {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 11px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #CBD5E1;
+  font-size: 0.77rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.18s ease;
+}
+
+.dh-style-chip:hover,
+.dh-layout-chip:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: #FFFFFF;
+}
+
+.dh-style-chip.active {
+  background: #4F46E5;
+  border-color: #A5B4FC;
+  color: #FFFFFF;
+  font-weight: 800;
+  box-shadow: 0 2px 10px rgba(99, 102, 241, 0.45);
+}
+
+.dh-layout-chip.active {
+  background: #059669;
+  border-color: #6EE7B7;
+  color: #FFFFFF;
+  font-weight: 800;
+  box-shadow: 0 2px 10px rgba(16, 185, 129, 0.45);
+}
+
+.dh-layout-chip .dh-ref-brand {
+  font-size: 0.68rem;
+  padding: 1px 6px;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.3);
+  color: #A7F3D0;
+}
+
+.dh-style-chip .dh-chip-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.dh-match-score {
+  background: #F59E0B;
+  color: #0F172A;
+  font-size: 0.67rem;
+  font-weight: 800;
+  padding: 1px 5px;
+  border-radius: 999px;
+}
+
+/* Expandable Identity, Domain Layout Blueprint & CI Customizer Drawer */
+.dh-drawer {
+  display: none;
+  background: #0B1120;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 20px;
+}
+
+.dh-drawer.open {
+  display: block;
+}
+
+.dh-drawer-inner {
+  max-width: 1420px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.15fr 1fr 0.7fr;
+  gap: 18px;
+}
+
+.dh-panel-box {
+  background: #131C31;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.dh-panel-title {
+  font-size: 0.92rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.dh-panel-sub {
+  font-size: 0.78rem;
+  color: #94A3B8;
+  margin-bottom: 12px;
+  line-height: 1.45;
+}
+
+.dh-filter-group {
+  margin-bottom: 10px;
+}
+
+.dh-filter-label {
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: #A5B4FC;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.dh-tag-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.dh-kw-tag {
+  padding: 4px 9px;
+  border-radius: 999px;
+  font-size: 0.73rem;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: #CBD5E1;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.dh-kw-tag:hover {
+  border-color: #818CF8;
+  color: #FFFFFF;
+}
+
+.dh-kw-tag.selected {
+  background: #10B981;
+  border-color: #34D399;
+  color: #064E3B;
+  font-weight: 800;
+}
+
+/* Blueprint Card inside Drawer */
+.dh-blueprint-card {
+  background: #0F172A;
+  border: 1px solid rgba(52, 211, 153, 0.3);
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 0.79rem;
+}
+
+.dh-bp-section {
+  background: rgba(255, 255, 255, 0.04);
+  border-left: 3px solid #10B981;
+  padding: 8px 10px;
+  border-radius: 6px;
+  margin-top: 8px;
+}
+
+.dh-bp-section.head-sec {
+  border-left-color: #6366F1;
+}
+
+.dh-ci-form-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.dh-ci-input-row label {
+  display: block;
+  font-size: 0.74rem;
+  color: #94A3B8;
+  margin-bottom: 3px;
+}
+
+.dh-ci-input-row input,
+.dh-ci-input-row select {
+  width: 100%;
+  padding: 7px 10px;
+  border-radius: 6px;
+  border: 1px solid #334155;
+  background: #0F172A;
+  color: #FFFFFF;
+  font-size: 0.82rem;
+}
+
+/* ==========================================================================
+   DOMAIN LAYOUT LIVE STAGE (Interactive Head + Body Showcase for 10 Domains)
+   All components inherit CSS Variables (--dh-primary, --dh-bg-main, etc.)
+   so any Style (00~10) + any Layout (01~10) combination works seamlessly!
+   ========================================================================== */
+
+#dh-layout-live-wrapper {
+  display: none;
+  border-bottom: 3px solid var(--dh-primary);
+  background: var(--dh-bg-main);
+  color: var(--dh-text-main);
+  transition: all 0.3s ease;
+}
+
+#dh-layout-live-wrapper.active {
+  display: block;
+}
+
+/* Top Layout Architecture Spec Ribbon */
+.dl-arch-ribbon {
+  background: linear-gradient(90deg, #0F172A 0%, #1E293B 100%);
+  color: #F8FAFC;
+  padding: 12px 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.dl-arch-ribbon-inner {
+  max-width: 1380px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.dl-arch-badges {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.dl-pill-tag {
+  font-size: 0.74rem;
+  font-weight: 800;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #059669;
+  color: #FFFFFF;
+}
+
+.dl-pill-tag.head-tag {
+  background: rgba(99, 102, 241, 0.25);
+  border: 1px solid #818CF8;
+  color: #E0E7FF;
+  font-weight: 600;
+}
+
+.dl-pill-tag.body-tag {
+  background: rgba(16, 185, 129, 0.2);
+  border: 1px solid #34D399;
+  color: #D1FAE5;
+  font-weight: 600;
+}
+
+/* Shared Domain Layout Stage Container */
+.dl-stage-container {
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.dl-section-label-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7px 14px;
+  background: rgba(99, 102, 241, 0.08);
+  border: 1px dashed var(--dh-primary);
+  border-radius: var(--dh-radius-sm);
+  margin: 14px 0 10px;
+  font-family: var(--dh-font-accent);
+  font-size: 0.75rem;
+  color: var(--dh-primary);
+  font-weight: 700;
+}
+
+/* --------------------------------------------------------------------------
+   LAYOUT 01: E-COMMERCE (무신사 Musinsa Style)
+   Head: 로고 + 통합검색바 + 마이페이지/장바구니 + 1차 카테고리 탭
+   Body: 좌측 다중 필터 사이드바 + 우측 4열 상품 카드 그리드
+   -------------------------------------------------------------------------- */
+.dl-ecom-head {
+  background: var(--dh-bg-surface);
+  border-bottom: var(--dh-border-style);
+  position: sticky;
+  top: 0;
+  z-index: 800;
+}
+
+.dl-ecom-top-promo {
+  background: var(--dh-primary);
+  color: #FFFFFF;
+  text-align: center;
+  padding: 6px 16px;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.dl-ecom-mainbar {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 24px;
+  align-items: center;
+  padding: 16px 0;
+}
+
+.dl-ecom-search {
+  display: flex;
+  align-items: center;
+  background: var(--dh-bg-main);
+  border: 2px solid var(--dh-primary);
+  border-radius: var(--dh-radius-btn);
+  padding: 8px 14px;
+  gap: 10px;
+}
+
+.dl-ecom-search input {
+  border: none;
+  background: transparent;
+  color: var(--dh-text-main);
+  font-size: 0.9rem;
+  width: 100%;
+  outline: none;
+}
+
+.dl-ecom-utils {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 0.84rem;
+  font-weight: 700;
+}
+
+.dl-ecom-cat-bar {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 10px 0;
+  border-top: 1px solid var(--dh-border);
+}
+
+.dl-ecom-cat-tab {
+  padding: 7px 15px;
+  border-radius: var(--dh-radius-btn);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--dh-text-secondary);
+  background: var(--dh-bg-main);
+  border: 1px solid var(--dh-border);
+  white-space: nowrap;
+}
+
+.dl-ecom-cat-tab.active,
+.dl-ecom-cat-tab:hover {
+  background: var(--dh-primary);
+  color: #FFFFFF;
+  border-color: var(--dh-primary);
+}
+
+.dl-ecom-body-grid {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 26px;
+  padding: 24px 0 48px;
+  align-items: start;
+}
+
+.dl-ecom-sidebar {
+  background: var(--dh-bg-surface);
+  border: var(--dh-border-style);
+  border-radius: var(--dh-radius-md);
+  padding: 18px;
+  box-shadow: var(--dh-shadow-sm);
+}
+
+.dl-filter-sec {
+  padding-bottom: 14px;
+  margin-bottom: 14px;
+  border-bottom: 1px solid var(--dh-border);
+}
+
+.dl-filter-sec:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.dl-filter-sec h5 {
+  font-size: 0.84rem;
+  font-weight: 800;
+  margin-bottom: 9px;
+  color: var(--dh-text-main);
+}
+
+.dl-filter-check {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.81rem;
+  color: var(--dh-text-secondary);
+  margin-bottom: 6px;
+  cursor: pointer;
+}
+
+.dl-ecom-product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+  gap: 18px;
+}
+
+.dl-ecom-card {
+  background: var(--dh-bg-surface);
+  border: var(--dh-border-style);
+  border-radius: var(--dh-radius-md);
+  overflow: hidden;
+  box-shadow: var(--dh-shadow-sm);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.dl-ecom-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--dh-shadow-md);
+}
+
+.dl-ecom-thumb {
+  position: relative;
+  height: 165px;
+  background: #0F172A;
+  overflow: hidden;
+  cursor: zoom-in;
+}
+
+.dl-ecom-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.dl-ecom-rank-badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: var(--dh-primary);
+  color: #FFFFFF;
+  font-size: 0.72rem;
+  font-weight: 800;
+  padding: 3px 8px;
+  border-radius: var(--dh-radius-sm);
+}
+
+.dl-ecom-card-info {
+  padding: 14px;
+}
+
+.dl-ecom-brand {
+  font-size: 0.73rem;
+  font-weight: 800;
+  color: var(--dh-secondary);
+  text-transform: uppercase;
+}
+
+.dl-ecom-title {
+  font-size: 0.94rem;
+  font-weight: 700;
+  margin: 4px 0 8px;
+  color: var(--dh-text-main);
+}
+
+.dl-ecom-price-row {
+  display: flex;
+  align-items: baseline;
+  gap: 7px;
+  margin-bottom: 10px;
+}
+
+.dl-ecom-discount {
+  color: #EF4444;
+  font-weight: 800;
+  font-size: 0.95rem;
+}
+
+.dl-ecom-price {
+  font-weight: 800;
+  font-size: 0.96rem;
+  color: var(--dh-text-main);
+}
+
+/* --------------------------------------------------------------------------
+   LAYOUT 02: OTT & STREAMING (넷플릭스 Netflix / 왓챠 Watcha Style)
+   Head: 투명 그라데이션 미니멀 헤더
+   Body: 몰입형 풀스크린 히어로 + 수평 스크롤 캐러셀(Row) 반복 배치
+   -------------------------------------------------------------------------- */
+.dl-ott-stage {
+  background: #090C15;
+  color: #F8FAFC;
+  padding-bottom: 48px;
+}
+
+.dl-ott-head {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 0%, rgba(9, 12, 21, 0.65) 100%);
+  padding: 16px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.dl-ott-nav {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #CBD5E1;
+}
+
+.dl-ott-nav button.active,
+.dl-ott-nav button:hover {
+  color: #FFFFFF;
+  font-weight: 800;
+}
+
+.dl-ott-billboard {
+  position: relative;
+  min-height: 410px;
+  background-size: cover;
+  background-position: center top;
+  display: flex;
+  align-items: flex-end;
+  padding: 44px 36px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dl-ott-billboard-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(9, 12, 21, 0.96) 0%, rgba(9, 12, 21, 0.72) 52%, rgba(9, 12, 21, 0.25) 100%),
+              linear-gradient(180deg, transparent 50%, #090C15 100%);
+}
+
+.dl-ott-billboard-content {
+  position: relative;
+  z-index: 2;
+  max-width: 640px;
+}
+
+.dl-ott-row-section {
+  padding: 24px 36px 8px;
+}
+
+.dl-ott-row-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.dl-ott-row-track {
+  display: flex;
+  gap: 18px;
+  overflow-x: auto;
+  padding: 8px 4px 16px;
+  scroll-behavior: smooth;
+}
+
+.dl-ott-card {
+  flex-shrink: 0;
+  width: 250px;
+  background: #141A29;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--dh-radius-md);
+  overflow: hidden;
+  transition: transform 0.25s ease, border-color 0.25s ease;
+  position: relative;
+}
+
+.dl-ott-card:hover {
+  transform: scale(1.04);
+  border-color: var(--dh-accent);
+  z-index: 5;
+}
+
+.dl-ott-rank-num {
+  font-family: var(--dh-font-heading);
+  font-size: 3.6rem;
+  font-weight: 900;
+  line-height: 1;
+  color: transparent;
+  -webkit-text-stroke: 2px var(--dh-accent);
+  position: absolute;
+  top: 6px;
+  left: 10px;
+  z-index: 3;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+}
+
+/* --------------------------------------------------------------------------
+   LAYOUT 03: ENTERTAINMENT & BOOKING (메가박스 Megabox / CGV Style)
+   Head: 로고 + 메뉴 + 하단 밀착 고정형 '빠른 예매(Quick Booking)' 위젯 바
+   Body: 숫자 랭킹(1~8위) 포스터 차트 + 트레일러 영상 & 이벤트 배너 모듈
+   -------------------------------------------------------------------------- */
+.dl-ent-quickbar-wrap {
+  background: linear-gradient(135deg, var(--dh-primary) 0%, #0F172A 100%);
+  color: #FFFFFF;
+  padding: 16px 24px;
+  border-bottom: 3px solid var(--dh-accent);
+  box-shadow: var(--dh-shadow-md);
+}
+
+.dl-ent-quickbar-grid {
+  max-width: 1320px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.2fr 1.1fr 1fr auto;
+  gap: 12px;
+  align-items: end;
+}
+
+.dl-ent-field label {
+  display: block;
+  font-size: 0.73rem;
+  color: #A5B4FC;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.dl-ent-field select {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: var(--dh-radius-sm);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(15, 23, 42, 0.85);
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 0.86rem;
+}
+
+.dl-ent-chart-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin: 22px 0 32px;
+}
+
+.dl-ent-poster-card {
+  background: var(--dh-bg-surface);
+  border: var(--dh-border-style);
+  border-radius: var(--dh-radius-md);
+  overflow: hidden;
+  box-shadow: var(--dh-shadow-sm);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.dl-ent-poster-top {
+  position: relative;
+  height: 185px;
+  background: #0B1120;
+}
+
+.dl-ent-poster-top img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.dl-ent-no-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(15, 23, 42, 0.88);
+  border: 2px solid var(--dh-accent);
+  color: #FFFFFF;
+  font-family: var(--dh-font-heading);
+  font-style: italic;
+  font-weight: 900;
+  font-size: 1rem;
+  padding: 3px 10px;
+  border-radius: var(--dh-radius-sm);
+}
+
+/* --------------------------------------------------------------------------
+   LAYOUT 04: PORTAL & NEWS MEDIA (네이버 뉴스 / 조선일보 3단 컬럼 그리드)
+   Head: 통합 검색창 + 실시간 이슈 키워드 + 섹션 탭
+   Body: 3단 컬럼 그리드 (Left: 내비게이션/속보 | Center: 메인 뉴스 | Right: 위젯)
+   -------------------------------------------------------------------------- */
+.dl-portal-3col-grid {
+  display: grid;
+  grid-template-columns: 235px 1fr 295px;
+  gap: 22px;
+  padding: 22px 0 44px;
+  align-items: start;
+}
+
+.dl-portal-col-box {
+  background: var(--dh-bg-surface);
+  border: var(--dh-border-style);
+  border-radius: var(--dh-radius-md);
+  padding: 18px;
+  box-shadow: var(--dh-shadow-sm);
+}
+
+.dl-breaking-item {
+  padding: 9px 0;
+  border-bottom: 1px dashed var(--dh-border);
+  font-size: 0.81rem;
+}
+
+.dl-breaking-item:last-child {
+  border-bottom: none;
+}
+
+/* --------------------------------------------------------------------------
+   LAYOUT 05: ENTERPRISE SAAS & DASHBOARD (잔디 / 노션 / 슬랙 Style)
+   Head: 미니멀 워크스페이스 상단 바
+   Body: 좌측 고정 트리 메뉴 사이드바(Tree Menu) + 우측 대형 작업 공간(Workspace)
+   -------------------------------------------------------------------------- */
+.dl-saas-shell-box {
+  border: var(--dh-border-style);
+  border-radius: var(--dh-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--dh-shadow-lg);
+  background: var(--dh-bg-surface);
+  margin: 14px 0 44px;
+}
+
+.dl-saas-topbar-head {
+  height: 54px;
+  background: #0F172A;
+  color: #F8FAFC;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.dl-saas-body-split {
+  display: grid;
+  grid-template-columns: 265px 1fr;
+  min-height: 580px;
+}
+
+.dl-saas-tree-sidebar {
+  background: var(--dh-bg-main);
+  border-right: var(--dh-border-style);
+  padding: 16px 12px;
+}
+
+.dl-tree-item {
+  width: 100%;
+  text-align: left;
+  padding: 8px 11px;
+  border-radius: var(--dh-radius-sm);
+  font-size: 0.83rem;
+  font-weight: 600;
+  color: var(--dh-text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 3px;
+  transition: all 0.15s ease;
+}
+
+.dl-tree-item:hover,
+.dl-tree-item.active {
+  background: var(--dh-primary);
+  color: #FFFFFF;
+}
+
+.dl-saas-workspace-canvas {
+  padding: 28px 32px;
+  background: var(--dh-bg-surface);
+}
+
+/* --------------------------------------------------------------------------
+   LAYOUT 06: TRAVEL & HOSPITALITY (야놀자 / 에어비앤비 Style)
+   Head: 로고 + 통화/언어 + 중앙 통합 검색 위젯 바(어디로/체크인/체크아웃/인원)
+   Body: 좌측 숙소형 카드 리스트 + 우측 가격 마커 인터랙티브 지도 2분할 스플릿
+   -------------------------------------------------------------------------- */
+.dl-travel-search-bar {
+  max-width: 980px;
+  margin: 14px auto 22px;
+  background: var(--dh-bg-surface);
+  border: 2px solid var(--dh-primary);
+  border-radius: 999px;
+  padding: 8px 10px 8px 22px;
+  display: grid;
+  grid-template-columns: 1.25fr 1fr 1fr 0.9fr auto;
+  gap: 10px;
+  align-items: center;
+  box-shadow: var(--dh-shadow-md);
+}
+
+.dl-travel-search-cell {
+  border-right: 1px solid var(--dh-border);
+  padding-right: 10px;
+}
+
+.dl-travel-search-cell:nth-child(4) {
+  border-right: none;
+}
+
+.dl-travel-search-cell label {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 800;
+  color: var(--dh-text-main);
+}
+
+.dl-travel-search-cell select,
+.dl-travel-search-cell input {
+  border: none;
+  background: transparent;
+  font-size: 0.82rem;
+  color: var(--dh-text-secondary);
+  font-weight: 600;
+  width: 100%;
+  outline: none;
+}
+
+.dl-travel-split-body {
+  display: grid;
+  grid-template-columns: 1.12fr 0.88fr;
+  gap: 24px;
+  padding-bottom: 44px;
+  align-items: start;
+}
+
+.dl-travel-map-box {
+  position: sticky;
+  top: 20px;
+  height: 560px;
+  border-radius: var(--dh-radius-lg);
+  border: var(--dh-border-style);
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 30% 35%, rgba(16, 185, 129, 0.16) 0%, transparent 45%),
+    radial-gradient(circle at 75% 65%, rgba(99, 102, 241, 0.18) 0%, transparent 50%),
+    linear-gradient(to right, rgba(148, 163, 184, 0.16) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(148, 163, 184, 0.16) 1px, transparent 1px),
+    #E2E8F0;
+  background-size: 100% 100%, 100% 100%, 36px 36px, 36px 36px;
+}
+
+.dl-map-price-pin {
+  position: absolute;
+  background: var(--dh-bg-surface);
+  color: var(--dh-text-main);
+  border: 2px solid var(--dh-primary);
+  border-radius: 999px;
+  padding: 5px 11px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.dl-map-price-pin:hover,
+.dl-map-price-pin.active {
+  background: var(--dh-primary);
+  color: #FFFFFF;
+  transform: scale(1.12);
+  z-index: 10;
+}
+
+/* --------------------------------------------------------------------------
+   LAYOUT 07: EDTECH & ONLINE COURSES (인프런 / 패스트캠퍼스 Style)
+   Head: 로고 + '강의 찾기' 드롭다운 + 커뮤니티 + 지식공유자 신청 + 검색창
+   Body: 상단 배너 슬라이더 + 기술 스택/난이도 태그 + 4열 강의 큐레이션 그리드
+   -------------------------------------------------------------------------- */
+.dl-edu-banner-slider {
+  background: var(--dh-hero-bg);
+  color: var(--dh-hero-text);
+  border-radius: var(--dh-radius-lg);
+  padding: 32px 36px;
+  margin: 16px 0 22px;
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 24px;
+  align-items: center;
+  border: var(--dh-border-style);
+}
+
+/* --------------------------------------------------------------------------
+   LAYOUT 08: RECRUITING & CAREER (원티드 Wanted / 사람인 Style)
+   Head: 직군/직무 키워드 태그 헤더 + 이력서 관리 + 검색바
+   Body: 좌측 맞춤형 포지션 카드 그리드 + 우측 연봉/비용 절감 계산기 & 아티클
+   -------------------------------------------------------------------------- */
+.dl-job-split-body {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 24px;
+  padding: 20px 0 44px;
+  align-items: start;
+}
+
+/* --------------------------------------------------------------------------
+   LAYOUT 09: PROPTECH & REAL ESTATE (직방 / 다방 Fullscreen Map + Overlay)
+   Head: 매물 유형 선택 탭 + 지역 검색창 반투명 플로팅 헤더
+   Body: 100% 풀스크린 지도 + 좌측 슬라이드 오버레이 매물 패널
+   -------------------------------------------------------------------------- */
+.dl-prop-fullscreen-stage {
+  position: relative;
+  min-height: 640px;
+  border-radius: var(--dh-radius-lg);
+  border: var(--dh-border-style);
+  overflow: hidden;
+  margin: 14px 0 44px;
+  background:
+    radial-gradient(circle at 60% 40%, rgba(16, 185, 129, 0.22) 0%, transparent 40%),
+    radial-gradient(circle at 35% 70%, rgba(79, 70, 229, 0.22) 0%, transparent 45%),
+    linear-gradient(to right, rgba(100, 116, 139, 0.18) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(100, 116, 139, 0.18) 1px, transparent 1px),
+    #CBD5E1;
+  background-size: 100% 100%, 100% 100%, 44px 44px, 44px 44px;
+}
+
+.dl-prop-floating-header {
+  position: relative;
+  z-index: 10;
+  margin: 16px;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  color: #0F172A;
+  border-radius: var(--dh-radius-md);
+  padding: 12px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  box-shadow: 0 8px 28px rgba(15, 23, 42, 0.18);
+}
+
+.dl-prop-overlay-panel {
+  position: relative;
+  z-index: 10;
+  width: 390px;
+  max-width: calc(100% - 32px);
+  margin: 0 16px 16px;
+  background: var(--dh-bg-surface);
+  color: var(--dh-text-main);
+  border: var(--dh-border-style);
+  border-radius: var(--dh-radius-md);
+  padding: 16px;
+  max-height: 510px;
+  overflow-y: auto;
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.25);
+}
+
+/* --------------------------------------------------------------------------
+   LAYOUT 10: CORPORATE BRANDING & ONE-PAGE STORY (토스 Toss Style)
+   Head: 미니멀 고정 헤더 + 챕터 앵커 메뉴
+   Body: 원페이지 패럴랙스 스크롤링 수직 스토리텔링 섹션
+   -------------------------------------------------------------------------- */
+.dl-brand-story-stage {
+  border-radius: var(--dh-radius-lg);
+  overflow: hidden;
+  border: var(--dh-border-style);
+  margin: 14px 0 44px;
+}
+
+.dl-brand-chapter {
+  padding: 72px 32px;
+  text-align: center;
+  border-bottom: 1px solid var(--dh-border);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* API & CI Inspector Modal */
+.dh-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(7, 11, 20, 0.85);
+  backdrop-filter: blur(8px);
+  z-index: 3500;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.dh-modal-backdrop.open {
+  display: flex;
+}
+
+.dh-modal-card {
+  max-width: 1080px;
+  width: 100%;
+  max-height: 88vh;
+  background: #0F172A;
+  color: #F8FAFC;
+  border: 1px solid rgba(129, 140, 248, 0.35);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.65);
+}
+
+.dh-modal-header {
+  padding: 18px 24px;
+  background: #131C31;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dh-modal-body {
+  padding: 24px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.dh-api-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dh-api-item {
+  background: #131C31;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.dh-api-method {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  font-weight: 800;
+  padding: 3px 8px;
+  border-radius: 4px;
+  background: rgba(16, 185, 129, 0.2);
+  color: #34D399;
+}
+
+.dh-api-url {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.84rem;
+  color: #A5B4FC;
+  word-break: break-all;
+}
+
+.dh-code-pre {
+  background: #070B14;
+  border: 1px solid #1E293B;
+  border-radius: 10px;
+  padding: 14px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  color: #E2E8F0;
+  overflow-x: auto;
+  max-height: 240px;
+  white-space: pre-wrap;
+}
+
+.dh-swatch-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(135px, 1fr));
+  gap: 10px;
+}
+
+.dh-swatch-card {
+  background: #131C31;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  padding: 8px;
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+.dh-swatch-card:hover {
+  transform: translateY(-2px);
+  border-color: #A5B4FC;
+}
+
+.dh-swatch-color {
+  height: 36px;
+  border-radius: 6px;
+  margin-bottom: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dh-swatch-label {
+  font-size: 0.72rem;
+  color: #94A3B8;
+  display: block;
+}
+
+.dh-Swatch-hex,
+.dh-swatch-hex {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+/* ==========================================================================
+   AI DESIGN & LAYOUT STUDIO MANAGER MODAL & DYNAMIC CUSTOM ARCHETYPE STYLES
+   ========================================================================== */
+
+.dh-ctrl-btn.dh-btn-ai-studio {
+  background: linear-gradient(135deg, #7C3AED 0%, #EC4899 55%, #F59E0B 100%);
+  border-color: #F472B6;
+  color: #FFFFFF;
+  font-weight: 800;
+  box-shadow: 0 4px 14px rgba(236, 72, 153, 0.35);
+}
+
+.dh-ctrl-btn.dh-btn-ai-studio:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.08);
+}
+
+.dh-strip-add-btn {
+  flex-shrink: 0;
+  padding: 5px 11px;
+  border-radius: 8px;
+  font-size: 0.74rem;
+  font-weight: 800;
+  background: rgba(124, 58, 237, 0.22);
+  border: 1px dashed #A78BFA;
+  color: #DDD6FE;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.dh-strip-add-btn:hover {
+  background: #7C3AED;
+  border-style: solid;
+  color: #FFFFFF;
+}
+
+.dh-strip-add-btn.layout-add {
+  background: rgba(16, 185, 129, 0.18);
+  border-color: #34D399;
+  color: #A7F3D0;
+}
+
+.dh-strip-add-btn.layout-add:hover {
+  background: #059669;
+  color: #FFFFFF;
+}
+
+.dh-studio-modal-card {
+  max-width: 1340px;
+  max-height: 92vh;
+}
+
+.dh-ai-status-pill {
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: rgba(16, 185, 129, 0.18);
+  border: 1px solid rgba(52, 211, 153, 0.45);
+  color: #6EE7B7;
+}
+
+.dh-studio-tabs-bar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #0B1120;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 10px 24px 0;
+  gap: 12px;
+}
+
+.dh-studio-tab-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 18px;
+  border-radius: 12px 12px 0 0;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: none;
+  color: #94A3B8;
+  cursor: pointer;
+  transition: all 0.18s ease;
+}
+
+.dh-studio-tab-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: #FFFFFF;
+}
+
+.dh-studio-tab-btn.active {
+  background: #131C31;
+  color: #FFFFFF;
+  border-color: #6366F1;
+  box-shadow: inset 0 3px 0 #6366F1;
+}
+
+#dh-tab-btn-layouts.active {
+  border-color: #10B981;
+  box-shadow: inset 0 3px 0 #10B981;
+}
+
+.dh-tab-icon {
+  font-size: 1.4rem;
+}
+
+.dh-studio-modal-body {
+  padding: 18px 24px;
+  background: #0F172A;
+}
+
+.dh-studio-tab-panel {
+  display: none;
+}
+
+.dh-studio-tab-panel.active {
+  display: block;
+}
+
+.dh-studio-split-grid {
+  display: grid;
+  grid-template-columns: 390px 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.dh-studio-catalog-col {
+  background: #131C31;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  max-height: 70vh;
+}
+
+.dh-studio-col-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.dh-studio-filter-row {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.dh-mini-filter {
+  flex: 1;
+  padding: 5px 8px;
+  border-radius: 6px;
+  font-size: 0.74rem;
+  font-weight: 700;
+  background: #0F172A;
+  border: 1px solid #334155;
+  color: #94A3B8;
+  cursor: pointer;
+}
+
+.dh-mini-filter.active {
+  background: #334155;
+  color: #FFFFFF;
+  border-color: #818CF8;
+}
+
+.dh-studio-item-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.dh-studio-list-card {
+  background: #0F172A;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 10px 12px;
+  transition: all 0.15s ease;
+}
+
+.dh-studio-list-card:hover {
+  border-color: rgba(129, 140, 248, 0.5);
+}
+
+.dh-studio-list-card.active {
+  border-color: #6366F1;
+  background: rgba(79, 70, 229, 0.15);
+}
+
+.dh-studio-list-card.active-layout {
+  border-color: #10B981;
+  background: rgba(16, 185, 129, 0.14);
+}
+
+.dh-custom-badge {
+  font-size: 0.66rem;
+  font-weight: 800;
+  padding: 1px 6px;
+  border-radius: 999px;
+  background: rgba(236, 72, 153, 0.22);
+  border: 1px solid #F472B6;
+  color: #FBCFE8;
+}
+
+.dh-builtin-badge {
+  font-size: 0.66rem;
+  font-weight: 700;
+  padding: 1px 6px;
+  border-radius: 999px;
+  background: rgba(148, 163, 184, 0.16);
+  color: #94A3B8;
+}
+
+.dh-studio-editor-col {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-height: 70vh;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.dh-ai-generator-box {
+  background: linear-gradient(135deg, rgba(79, 70, 229, 0.18) 0%, rgba(236, 72, 153, 0.12) 100%);
+  border: 1px solid rgba(167, 139, 250, 0.45);
+  border-radius: 12px;
+  padding: 14px 16px;
+}
+
+.dh-ai-generator-box.dh-ai-layout-box {
+  background: linear-gradient(135deg, rgba(5, 150, 105, 0.2) 0%, rgba(37, 99, 235, 0.14) 100%);
+  border-color: rgba(52, 211, 153, 0.45);
+}
+
+.dh-ai-pill {
+  display: inline-block;
+  font-size: 0.69rem;
+  font-weight: 800;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: rgba(124, 58, 237, 0.3);
+  border: 1px solid #A78BFA;
+  color: #EDE9FE;
+}
+
+.dh-preset-chip {
+  padding: 3px 9px;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  background: rgba(15, 23, 42, 0.7);
+  border: 1px solid rgba(167, 139, 250, 0.4);
+  color: #E2E8F0;
+  cursor: pointer;
+}
+
+.dh-preset-chip:hover {
+  background: #4F46E5;
+  color: #FFFFFF;
+}
+
+.dh-preset-chip.layout-preset {
+  border-color: rgba(52, 211, 153, 0.4);
+}
+
+.dh-preset-chip.layout-preset:hover {
+  background: #059669;
+  color: #FFFFFF;
+}
+
+.dh-studio-textarea,
+.dh-studio-input {
+  width: 100%;
+  padding: 7px 10px;
+  border-radius: 7px;
+  border: 1px solid #334155;
+  background: #0B1120;
+  color: #FFFFFF;
+  font-size: 0.81rem;
+  font-family: inherit;
+}
+
+.dh-studio-textarea:focus,
+.dh-studio-input:focus {
+  outline: none;
+  border-color: #818CF8;
+}
+
+.dh-studio-label {
+  display: block;
+  font-size: 0.73rem;
+  font-weight: 700;
+  color: #CBD5E1;
+  margin-bottom: 4px;
+}
+
+.dh-studio-form-row-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.dh-studio-form-row-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.dh-studio-form-card {
+  background: #131C31;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  padding: 14px 16px;
+}
+
+.dh-form-mode-badge {
+  font-size: 0.7rem;
+  font-weight: 800;
+  padding: 3px 8px;
+  border-radius: 6px;
+  background: #4F46E5;
+  color: #FFFFFF;
+}
+
+.dh-form-mode-badge.layout-mode {
+  background: #059669;
+}
+
+.dh-ctrl-btn.dh-btn-ai-primary {
+  background: linear-gradient(135deg, #7C3AED 0%, #EC4899 100%);
+  border-color: #F472B6;
+  color: #FFFFFF;
+}
+
+.dh-ctrl-btn.dh-btn-ai-layout {
+  background: linear-gradient(135deg, #059669 0%, #0284C7 100%);
+  border-color: #34D399;
+  color: #FFFFFF;
+}
+
+.dh-color-editor-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+.dh-color-field {
+  background: #0B1120;
+  border: 1px solid #1E293B;
+  border-radius: 7px;
+  padding: 6px 8px;
+}
+
+.dh-color-field > span {
+  display: block;
+  font-size: 0.69rem;
+  color: #94A3B8;
+  margin-bottom: 4px;
+}
+
+.dh-color-input-wrap {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.dh-color-input-wrap input[type="color"] {
+  width: 26px;
+  height: 26px;
+  border: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.dh-color-input-wrap input[type="text"] {
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: #FFFFFF;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+/* ==========================================================================
+   DYNAMIC CUSTOM / AI-GENERATED LAYOUT ARCHETYPE STAGE STYLES
+   ========================================================================== */
+.dl-custom-stage {
+  background: var(--dh-bg-main);
+  color: var(--dh-text-main);
+  padding-bottom: 48px;
+}
+
+.dl-custom-head {
+  background: var(--dh-bg-surface);
+  border-bottom: var(--dh-border-style);
+  padding: 14px 0;
+  position: sticky;
+  top: 0;
+  z-index: 750;
+}
+
+.dl-custom-hero {
+  background: var(--dh-hero-bg);
+  color: var(--dh-hero-text);
+  border-radius: var(--dh-radius-lg);
+  padding: 28px 32px;
+  margin: 16px 0 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  box-shadow: var(--dh-shadow-md);
+}
+
+.dl-custom-grid-sidebar-right {
+  display: grid;
+  grid-template-columns: 1fr 330px;
+  gap: 24px;
+  align-items: start;
+}
+
+.dl-custom-sidebar-left-grid {
+  display: grid;
+  grid-template-columns: 270px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.dl-custom-three-column-hub {
+  display: grid;
+  grid-template-columns: 230px 1fr 300px;
+  gap: 20px;
+  align-items: start;
+}
+
+.dl-custom-masonry-pinboard {
+  columns: 3 280px;
+  column-gap: 18px;
+}
+
+.dl-custom-masonry-item {
+  break-inside: avoid;
+  margin-bottom: 18px;
+  background: var(--dh-bg-surface);
+  border: var(--dh-border-style);
+  border-radius: var(--dh-radius-md);
+  overflow: hidden;
+  box-shadow: var(--dh-shadow-sm);
+}
+
+.dl-custom-split-interactive-widget {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.dl-custom-bottom-dock {
+  position: sticky;
+  bottom: 14px;
+  background: #0F172A;
+  color: #FFFFFF;
+  border: 2px solid var(--dh-primary);
+  border-radius: 999px;
+  padding: 12px 24px;
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 14px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.45);
+  z-index: 820;
+}
+
+@media (max-width: 1100px) {
+  .dh-drawer-inner,
+  .dh-studio-split-grid,
+  .dh-studio-tabs-bar,
+  .dh-color-editor-grid,
+  .dl-ecom-body-grid,
+  .dl-portal-3col-grid,
+  .dl-saas-body-split,
+  .dl-travel-split-body,
+  .dl-job-split-body,
+  .dl-edu-banner-slider,
+  .dl-ent-quickbar-grid,
+  .dl-custom-grid-sidebar-right,
+  .dl-custom-sidebar-left-grid,
+  .dl-custom-three-column-hub,
+  .dl-custom-split-interactive-widget {
+    grid-template-columns: 1fr;
+  }
+  .dl-ent-chart-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .dl-travel-search-bar {
+    grid-template-columns: 1fr;
+    border-radius: 16px;
+    padding: 16px;
+  }
+}
+
+
+/* ==========================================================================
+   V4.0 4-STAGE WORKFLOW ARCHITECTURE UI/UX STYLES
+   - Stage 1 (#dh-stage-landing): Purpose/Guide Hero + 10~20 Representative Tiles
+   - Stage 2 (#dh-stage-preview): Detailed Guide + 4 Representative Standard Pages Preview
+   - Stage 3 (#dh-stage-advanced): Style(Tone & Manner) × Layout(Menu & View) Matrix Studio
+   - Stage 4 (#dh-stage-sample): Full Sample Website Navigation Mode
+   ========================================================================== */
+
+.dh-app-stage {
+  display: none;
+}
+
+.dh-app-stage.active {
+  display: block;
+}
+
+/* Global Top Navigation Bar */
+.dh-v4-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 2200;
+  background: rgba(11, 17, 32, 0.96);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(99, 102, 241, 0.35);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+  font-family: 'Pretendard Variable', Pretendard, -apple-system, sans-serif;
+  color: #F8FAFC;
+}
+
+.dh-v4-navbar-inner {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 10px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.dh-v4-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.dh-v4-logo-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #4F46E5 0%, #10B981 100%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.4);
+}
+
+.dh-v4-brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.dh-v4-brand-title {
+  font-size: 0.92rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  color: #FFFFFF;
+}
+
+.dh-v4-brand-title small {
+  background: rgba(16, 185, 129, 0.2);
+  color: #6EE7B7;
+  padding: 1px 6px;
+  border-radius: 999px;
+  font-size: 0.68rem;
+  margin-left: 4px;
+}
+
+.dh-v4-brand-sub {
+  font-size: 0.72rem;
+  color: #94A3B8;
+}
+
+/* 4-Stage Stepper */
+.dh-v4-stepper {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  background: rgba(30, 41, 59, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 4px 6px;
+  border-radius: 12px;
+}
+
+.dh-v4-step-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 13px;
+  border-radius: 8px;
+  font-size: 0.79rem;
+  font-weight: 700;
+  color: #CBD5E1;
+  background: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.18s ease;
+}
+
+.dh-v4-step-btn .step-num {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  color: #E2E8F0;
+  font-size: 0.7rem;
+  font-weight: 800;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dh-v4-step-btn:hover {
+  color: #FFFFFF;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.dh-v4-step-btn.active {
+  background: #4F46E5;
+  color: #FFFFFF;
+  border-color: #818CF8;
+  box-shadow: 0 4px 14px rgba(79, 70, 229, 0.45);
+}
+
+.dh-v4-step-btn.active .step-num {
+  background: #FFFFFF;
+  color: #4F46E5;
+}
+
+.dh-v4-step-btn.dh-v4-step-advanced {
+  background: rgba(16, 185, 129, 0.14);
+  color: #6EE7B7;
+  border-color: rgba(52, 211, 153, 0.35);
+}
+
+.dh-v4-step-btn.dh-v4-step-advanced:hover,
+.dh-v4-step-btn.dh-v4-step-advanced.active {
+  background: #059669;
+  color: #FFFFFF;
+  border-color: #34D399;
+}
+
+.dh-v4-step-arrow {
+  color: #64748B;
+  font-size: 0.75rem;
+}
+
+.dh-v4-step-divider {
+  width: 1px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  margin: 0 4px;
+}
+
+.dh-v4-nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.dh-v4-current-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(148, 163, 184, 0.28);
+  padding: 5px 11px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: border-color 0.18s ease;
+}
+
+.dh-v4-current-pill:hover {
+  border-color: #818CF8;
+}
+
+.dh-v4-pill-style {
+  color: #F8FAFC;
+  font-weight: 700;
+}
+
+.dh-v4-pill-layout {
+  color: #6EE7B7;
+  font-weight: 700;
+}
+
+/* Common Container & Buttons for Support Tool Stages 1~3 */
+.dh-v4-container {
+  max-width: 1420px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+#dh-stage-landing,
+#dh-stage-preview,
+#dh-stage-advanced {
+  font-family: 'Pretendard Variable', Pretendard, -apple-system, sans-serif;
+  background: #0B1120;
+  color: #F8FAFC;
+  min-height: calc(100vh - 60px);
+}
+
+.dh-v4-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 22px;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.dh-v4-btn-primary {
+  background: linear-gradient(135deg, #4F46E5 0%, #2563EB 100%);
+  color: #FFFFFF;
+  border-color: #818CF8;
+  box-shadow: 0 8px 24px rgba(79, 70, 229, 0.4);
+}
+
+.dh-v4-btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(79, 70, 229, 0.55);
+}
+
+.dh-v4-btn-secondary {
+  background: rgba(16, 185, 129, 0.15);
+  color: #6EE7B7;
+  border-color: rgba(52, 211, 153, 0.45);
+}
+
+.dh-v4-btn-secondary:hover {
+  background: #059669;
+  color: #FFFFFF;
+  transform: translateY(-2px);
+}
+
+.dh-v4-btn-accent {
+  background: linear-gradient(135deg, #059669 0%, #10B981 100%);
+  color: #FFFFFF;
+  border-color: #6EE7B7;
+  box-shadow: 0 8px 24px rgba(16, 185, 129, 0.35);
+}
+
+.dh-v4-btn-accent:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.08);
+}
+
+/* ==========================================================================
+   STAGE 1: LANDING VIEW (첫페이지 목적·사용법·활용법 + 대표 타일 10~20개)
+   ========================================================================== */
+.dh-v4-landing-hero {
+  padding: 44px 0 36px;
+  background:
+    radial-gradient(ellipse at 20% 0%, rgba(79, 70, 229, 0.28) 0%, transparent 55%),
+    radial-gradient(ellipse at 85% 15%, rgba(16, 185, 129, 0.2) 0%, transparent 50%),
+    linear-gradient(180deg, #0F172A 0%, #0B1120 100%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.dh-v4-hero-top {
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  gap: 28px;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.dh-v4-eyebrow {
+  display: inline-block;
+  background: rgba(99, 102, 241, 0.18);
+  border: 1px solid rgba(129, 140, 248, 0.4);
+  color: #A5B4FC;
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 5px 12px;
+  border-radius: 999px;
+  letter-spacing: 0.05em;
+  margin-bottom: 14px;
+}
+
+.dh-v4-hero-title {
+  font-size: clamp(1.75rem, 2.7vw, 2.45rem);
+  font-weight: 800;
+  line-height: 1.3;
+  letter-spacing: -0.03em;
+  color: #FFFFFF;
+  margin-bottom: 14px;
+}
+
+.dh-v4-hero-title span {
+  background: linear-gradient(90deg, #818CF8 0%, #34D399 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dh-v4-hero-desc {
+  font-size: 0.96rem;
+  line-height: 1.68;
+  color: #CBD5E1;
+  margin-bottom: 22px;
+}
+
+.dh-v4-hero-cta-row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* Flow Summary Card */
+.dh-v4-flow-summary-card {
+  background: rgba(19, 28, 49, 0.9);
+  border: 1px solid rgba(129, 140, 248, 0.3);
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+}
+
+.dh-v4-flow-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.dh-v4-flow-badge {
+  background: #4F46E5;
+  color: #FFFFFF;
+  font-size: 0.68rem;
+  font-weight: 800;
+  padding: 3px 8px;
+  border-radius: 6px;
+}
+
+.dh-v4-flow-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.dh-v4-flow-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background: rgba(15, 23, 42, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  padding: 12px 14px;
+  border-radius: 12px;
+}
+
+.flow-step-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #4F46E5, #10B981);
+  color: #FFFFFF;
+  font-size: 0.76rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.dh-v4-flow-step strong {
+  display: block;
+  font-size: 0.86rem;
+  color: #F8FAFC;
+  margin-bottom: 2px;
+}
+
+.dh-v4-flow-step p {
+  font-size: 0.76rem;
+  color: #94A3B8;
+  line-height: 1.45;
+  margin: 0;
+}
+
+/* 3 Guide Cards Grid */
+.dh-v4-guide-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.dh-v4-guide-card {
+  background: rgba(30, 41, 59, 0.55);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  border-radius: 16px;
+  padding: 20px 22px;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.dh-v4-guide-card:hover {
+  border-color: rgba(129, 140, 248, 0.45);
+  transform: translateY(-2px);
+}
+
+.guide-card-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.guide-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: rgba(79, 70, 229, 0.18);
+  border: 1px solid rgba(129, 140, 248, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.guide-label {
+  font-size: 0.68rem;
+  font-weight: 800;
+  color: #818CF8;
+  letter-spacing: 0.05em;
+  display: block;
+}
+
+.guide-card-head h3 {
+  font-size: 1.02rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.guide-body {
+  font-size: 0.82rem;
+  line-height: 1.6;
+  color: #CBD5E1;
+  margin-bottom: 10px;
+}
+
+.guide-list {
+  margin: 0;
+  padding-left: 16px;
+  font-size: 0.78rem;
+  color: #94A3B8;
+  line-height: 1.65;
+}
+
+.guide-list li strong {
+  color: #E2E8F0;
+}
+
+/* Representative Tiles Showcase Section */
+.dh-v4-landing-tiles-section {
+  padding: 40px 0 64px;
+}
+
+.dh-v4-sec-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 26px;
+}
+
+.dh-v4-sec-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 800;
+  color: #34D399;
+  background: rgba(16, 185, 129, 0.14);
+  border: 1px solid rgba(52, 211, 153, 0.35);
+  padding: 3px 10px;
+  border-radius: 999px;
+  letter-spacing: 0.04em;
+  margin-bottom: 8px;
+}
+
+.dh-v4-sec-title {
+  font-size: 1.55rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  margin-bottom: 6px;
+}
+
+.dh-v4-sec-desc {
+  font-size: 0.88rem;
+  color: #94A3B8;
+  max-width: 780px;
+  line-height: 1.55;
+}
+
+.dh-v4-tile-tabs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  background: #131C31;
+  padding: 6px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dh-v4-tile-tab {
+  padding: 9px 15px;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #CBD5E1;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.18s ease;
+}
+
+.dh-v4-tile-tab small {
+  opacity: 0.8;
+  font-weight: 500;
+}
+
+.dh-v4-tile-tab.active {
+  background: #4F46E5;
+  color: #FFFFFF;
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.4);
+}
+
+/* Visual Representative Tiles Grid (10~20 Tiles at a glance) */
+.dh-v4-tile-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(265px, 1fr));
+  gap: 18px;
+}
+
+.dh-v4-rep-tile {
+  background: #131C31;
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.22s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.dh-v4-rep-tile:hover {
+  transform: translateY(-5px);
+  border-color: #818CF8;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.45);
+}
+
+.dh-v4-rep-tile.selected-tile {
+  border: 2px solid #34D399;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
+}
+
+/* Mini Visual Webpage Wireframe inside each Tile */
+.dh-tile-mini-screen {
+  height: 148px;
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dh-tile-mini-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 8px;
+  border-radius: 6px;
+  font-size: 0.65rem;
+  font-weight: 700;
+}
+
+.dh-tile-mini-hero {
+  padding: 6px 4px;
+}
+
+.dh-tile-mini-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+}
+
+.dh-tile-mini-card-item {
+  height: 28px;
+  border-radius: 5px;
+  padding: 4px 6px;
+  font-size: 0.58rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dh-tile-body {
+  padding: 14px 16px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.dh-tile-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  margin-bottom: 4px;
+}
+
+.dh-tile-title {
+  font-size: 0.96rem;
+  font-weight: 800;
+  color: #FFFFFF;
+}
+
+.dh-tile-sub {
+  font-size: 0.76rem;
+  color: #94A3B8;
+  line-height: 1.45;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.dh-tile-meta-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-bottom: 10px;
+}
+
+.dh-tile-tag {
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.07);
+  color: #CBD5E1;
+}
+
+.dh-tile-tag.menu-tag {
+  background: rgba(99, 102, 241, 0.18);
+  color: #A5B4FC;
+  border: 1px solid rgba(129, 140, 248, 0.3);
+}
+
+.dh-tile-tag.view-tag {
+  background: rgba(16, 185, 129, 0.16);
+  color: #6EE7B7;
+  border: 1px solid rgba(52, 211, 153, 0.3);
+}
+
+.dh-tile-footer {
+  padding: 10px 16px;
+  background: rgba(15, 23, 42, 0.7);
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+}
+
+/* Bottom Callout Banner to Advanced Selection Tool */
+.dh-v4-advanced-cta-banner {
+  margin-top: 36px;
+  background: linear-gradient(135deg, rgba(30, 27, 75, 0.9) 0%, rgba(6, 78, 59, 0.85) 100%);
+  border: 1px solid rgba(52, 211, 153, 0.45);
+  border-radius: 20px;
+  padding: 28px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.4);
+}
+
+.adv-cta-left {
+  max-width: 820px;
+}
+
+.adv-cta-badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: #6EE7B7;
+  background: rgba(0, 0, 0, 0.35);
+  padding: 4px 10px;
+  border-radius: 999px;
+  margin-bottom: 8px;
+}
+
+.adv-cta-left h3 {
+  font-size: 1.22rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  margin-bottom: 6px;
+}
+
+.adv-cta-left p {
+  font-size: 0.86rem;
+  color: #E2E8F0;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ==========================================================================
+   STAGE 2: DETAIL GUIDE & REPRESENTATIVE STANDARD PAGES PREVIEW
+   ========================================================================== */
+.dh-v4-stage-subbar {
+  background: #131C31;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 12px 0;
+}
+
+.dh-v4-subbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.dh-v4-subbar-title {
+  font-size: 0.92rem;
+  font-weight: 800;
+  color: #E2E8F0;
+}
+
+.dh-v4-preview-layout {
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  gap: 24px;
+  padding-top: 24px;
+  padding-bottom: 60px;
+  align-items: start;
+}
+
+.dh-v4-guide-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.dh-v4-side-card {
+  background: #131C31;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 16px;
+  padding: 18px;
+}
+
+.side-card-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.dh-v4-quick-select-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dh-v4-mini-label {
+  display: block;
+  font-size: 0.73rem;
+  font-weight: 700;
+  color: #A5B4FC;
+  margin-bottom: 4px;
+}
+
+.dh-v4-select {
+  width: 100%;
+  background: #0F172A;
+  color: #FFFFFF;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+/* Right Main Stage: Representative Standard Pages Preview */
+.dh-v4-standard-preview-main {
+  background: #131C31;
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  border-radius: 18px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.dh-v4-preview-stage-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dh-v4-rep-page-tabs {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  background: #0B1120;
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dh-v4-rep-tab {
+  padding: 7px 12px;
+  border-radius: 7px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #94A3B8;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.dh-v4-rep-tab:hover {
+  color: #FFFFFF;
+}
+
+.dh-v4-rep-tab.active {
+  background: #4F46E5;
+  color: #FFFFFF;
+}
+
+/* 2x2 Overview Grid of the 4 Representative Standard Pages */
+.dh-rep-overview-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.dh-rep-page-frame {
+  background: var(--dh-bg-main);
+  color: var(--dh-text-main);
+  font-family: var(--dh-font-body);
+  border: 2px solid rgba(148, 163, 184, 0.28);
+  border-radius: 14px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+  transition: border-color 0.2s ease;
+}
+
+.dh-rep-page-frame:hover {
+  border-color: #818CF8;
+}
+
+.dh-rep-frame-bar {
+  background: #0F172A;
+  color: #E2E8F0;
+  padding: 8px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dh-rep-frame-dots {
+  display: inline-flex;
+  gap: 5px;
+  margin-right: 8px;
+}
+
+.dh-rep-frame-dots i {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dh-rep-frame-body {
+  padding: 18px;
+  flex: 1;
+  background: var(--dh-bg-main);
+  color: var(--dh-text-main);
+}
+
+.dh-v4-preview-confirm-bar {
+  background: linear-gradient(135deg, rgba(79, 70, 229, 0.2) 0%, rgba(16, 185, 129, 0.2) 100%);
+  border: 1px solid rgba(52, 211, 153, 0.4);
+  border-radius: 14px;
+  padding: 18px 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* ==========================================================================
+   STAGE 3: ADVANCED COMBINATION & MANAGEMENT STUDIO
+   ========================================================================== */
+.dh-v4-adv-intro-card {
+  background: #131C31;
+  border: 1px solid rgba(129, 140, 248, 0.28);
+  border-radius: 18px;
+  padding: 22px 24px;
+  margin-bottom: 22px;
+}
+
+.adv-intro-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.dh-v4-adv-filter-strip {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  background: rgba(15, 23, 42, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 14px 16px;
+}
+
+.dh-v4-adv-workspace-grid {
+  display: grid;
+  grid-template-columns: 330px 350px 1fr;
+  gap: 18px;
+  align-items: start;
+}
+
+.dh-v4-adv-col,
+.dh-v4-adv-preview-col {
+  background: #131C31;
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.adv-col-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.adv-col-header h4 {
+  font-size: 0.94rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  margin: 2px 0 0;
+}
+
+.adv-col-header h4 small {
+  font-size: 0.72rem;
+  color: #94A3B8;
+  font-weight: 500;
+}
+
+.adv-axis-badge {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 800;
+  padding: 2px 7px;
+  border-radius: 5px;
+  letter-spacing: 0.04em;
+}
+
+.adv-axis-badge.style-axis {
+  background: rgba(99, 102, 241, 0.22);
+  color: #A5B4FC;
+}
+
+.adv-axis-badge.layout-axis {
+  background: rgba(16, 185, 129, 0.22);
+  color: #6EE7B7;
+}
+
+.adv-axis-badge.combo-axis {
+  background: rgba(245, 158, 11, 0.22);
+  color: #FCD34D;
+}
+
+.dh-v4-adv-card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 760px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.dh-adv-select-card {
+  background: #0F172A;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 12px;
+  padding: 12px 14px;
+  cursor: pointer;
+  transition: all 0.16s ease;
+}
+
+.dh-adv-select-card:hover {
+  border-color: #818CF8;
+  background: rgba(30, 41, 59, 0.9);
+}
+
+.dh-adv-select-card.active-style {
+  border: 2px solid #6366F1;
+  background: rgba(79, 70, 229, 0.14);
+}
+
+.dh-adv-select-card.active-layout {
+  border: 2px solid #10B981;
+  background: rgba(16, 185, 129, 0.14);
+}
+
+/* ==========================================================================
+   STAGE 4: SLIM CONTEXT BAR FOR FULL SAMPLE WEBSITE NAVIGATION
+   ========================================================================== */
+.dh-v4-sample-bar {
+  background: #0F172A;
+  border-bottom: 2px solid #10B981;
+  padding: 8px 20px;
+  font-family: 'Pretendard Variable', Pretendard, sans-serif;
+  color: #F8FAFC;
+}
+
+.dh-v4-sample-bar-inner {
+  max-width: 1420px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.dh-v4-sample-status {
+  font-size: 0.78rem;
+  color: #A7F3D0;
+  font-weight: 600;
+}
+
+@media (max-width: 1180px) {
+  .dh-v4-hero-top,
+  .dh-v4-guide-cards-grid,
+  .dh-v4-preview-layout,
+  .dh-v4-adv-workspace-grid,
+  .dh-v4-adv-filter-strip,
+  .dh-rep-overview-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==========================================================================
+   v5.0 INFORMATION ARCHITECTURE (IA) STUDIO SHELL:
+   GNB (Depth 1) · LNB (Depth 2) · SNB (Depth 3) · FNB (Global Footer)
+   + Tooltips, Expandable Accordions, Whitespace & Layout Reflow Visualizer
+   ========================================================================== */
+
+/* 1. Global Tooltip System ([data-tooltip]) */
+[data-tooltip] {
+  position: relative;
+}
+
+[data-tooltip]::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%) translateY(4px);
+  min-width: 220px;
+  max-width: 320px;
+  background: rgba(15, 23, 42, 0.97);
+  color: #F8FAFC;
+  font-family: 'Pretendard Variable', Pretendard, sans-serif;
+  font-size: 0.74rem;
+  font-weight: 500;
+  line-height: 1.5;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(129, 140, 248, 0.45);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45);
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.16s ease, transform 0.16s ease;
+  z-index: 3500;
+  white-space: normal;
+  text-align: left;
+}
+
+.dh-v5-gnb [data-tooltip]::after,
+.dh-v5-lnb [data-tooltip]::after {
+  bottom: auto;
+  top: calc(100% + 8px);
+}
+
+[data-tooltip]:hover::after,
+[data-tooltip]:focus-visible::after {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+.dh-v5-info-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgba(99, 102, 241, 0.18);
+  border: 1px solid rgba(129, 140, 248, 0.4);
+  color: #A5B4FC;
+  font-size: 0.72rem;
+  font-weight: 800;
+  cursor: help;
+  flex-shrink: 0;
+}
+
+/* 2. Depth 1: GNB (Global Navigation Bar) */
+.dh-v5-gnb {
+  position: sticky;
+  top: 0;
+  z-index: 1600;
+  background: rgba(11, 17, 32, 0.97);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(99, 102, 241, 0.35);
+  font-family: 'Pretendard Variable', Pretendard, sans-serif;
+  color: #F8FAFC;
+}
+
+.dh-v5-gnb-inner {
+  max-width: 1640px;
+  margin: 0 auto;
+  padding: 8px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.dh-v5-brand-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dh-v5-snb-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 7px 11px;
+  border-radius: 8px;
+  background: #1E293B;
+  border: 1px solid #334155;
+  color: #E2E8F0;
+  font-size: 0.76rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.dh-v5-snb-toggle:hover {
+  background: #334155;
+  border-color: #818CF8;
+  color: #FFFFFF;
+}
+
+.dh-v5-brand {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  cursor: pointer;
+}
+
+.dh-v5-logo-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 9px;
+  background: linear-gradient(135deg, #4F46E5 0%, #10B981 100%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.05rem;
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.35);
+}
+
+.dh-v5-brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.dh-v5-brand-title {
+  font-size: 0.88rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  letter-spacing: -0.01em;
+}
+
+.dh-v5-brand-title small {
+  color: #6EE7B7;
+  font-size: 0.68rem;
+  margin-left: 3px;
+}
+
+.dh-v5-brand-sub {
+  font-size: 0.68rem;
+  color: #94A3B8;
+}
+
+/* GNB Menu Buttons */
+.dh-v5-gnb-menus {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: rgba(30, 41, 59, 0.75);
+  padding: 4px 6px;
+  border-radius: 11px;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  flex-wrap: wrap;
+}
+
+.dh-v5-gnb-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 12px;
+  border-radius: 8px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #CBD5E1;
+  background: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.16s ease;
+  white-space: nowrap;
+}
+
+.dh-v5-gnb-btn:hover {
+  color: #FFFFFF;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.dh-v5-gnb-btn.active {
+  background: linear-gradient(135deg, #4F46E5 0%, #3730A3 100%);
+  color: #FFFFFF;
+  border-color: #818CF8;
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.35);
+}
+
+.gnb-priority-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #10B981;
+  box-shadow: 0 0 8px #10B981;
+}
+
+.dh-v5-gnb-actions {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.dh-v5-active-capsule {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(148, 163, 184, 0.28);
+  padding: 5px 11px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: border-color 0.15s ease;
+}
+
+.dh-v5-active-capsule:hover {
+  border-color: #818CF8;
+}
+
+.dh-v5-capsule-style {
+  color: #A5B4FC;
+}
+
+.dh-v5-capsule-sep {
+  color: #64748B;
+}
+
+.dh-v5-capsule-layout {
+  color: #6EE7B7;
+}
+
+/* 3. Depth 2: LNB (Local Navigation Bar) */
+.dh-v5-lnb {
+  position: sticky;
+  top: 53px;
+  z-index: 1550;
+  background: #131C31;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.18);
+  font-family: 'Pretendard Variable', Pretendard, sans-serif;
+  color: #E2E8F0;
+}
+
+.dh-v5-lnb-inner {
+  max-width: 1640px;
+  margin: 0 auto;
+  padding: 6px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.dh-v5-lnb-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.dh-v5-depth-badge {
+  font-size: 0.66rem;
+  font-weight: 800;
+  color: #38BDF8;
+  background: rgba(14, 165, 233, 0.15);
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  padding: 3px 8px;
+  border-radius: 6px;
+  letter-spacing: 0.04em;
+}
+
+.dh-v5-lnb-tabs {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.dh-v5-lnb-tab-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  border-radius: 7px;
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: #94A3B8;
+  background: rgba(15, 23, 42, 0.55);
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.dh-v5-lnb-tab-btn:hover {
+  color: #FFFFFF;
+  border-color: rgba(129, 140, 248, 0.45);
+}
+
+.dh-v5-lnb-tab-btn.active {
+  background: rgba(79, 70, 229, 0.22);
+  color: #FFFFFF;
+  border-color: #818CF8;
+}
+
+.dh-v5-lnb-tab-btn .lnb-code {
+  font-size: 0.66rem;
+  color: #A5B4FC;
+  background: rgba(99, 102, 241, 0.2);
+  padding: 1px 5px;
+  border-radius: 4px;
+}
+
+.dh-v5-lnb-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.dh-v5-attr-pill {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #6EE7B7;
+  background: rgba(16, 185, 129, 0.12);
+  border: 1px solid rgba(52, 211, 153, 0.3);
+  padding: 3px 9px;
+  border-radius: 999px;
+}
+
+/* LNB Hover Popover */
+.dh-v5-tooltip-trigger {
+  position: relative;
+  font-size: 0.73rem;
+  font-weight: 700;
+  color: #CBD5E1;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  padding: 4px 10px;
+  border-radius: 7px;
+  cursor: help;
+}
+
+.dh-v5-popover-box {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  width: 340px;
+  background: #0F172A;
+  border: 1px solid #6366F1;
+  border-radius: 12px;
+  padding: 14px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.55);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(4px);
+  transition: all 0.16s ease;
+  z-index: 3600;
+  pointer-events: none;
+}
+
+.dh-v5-tooltip-trigger:hover .dh-v5-popover-box,
+.dh-v5-tooltip-trigger:focus-within .dh-v5-popover-box {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dh-v5-popover-box strong {
+  display: block;
+  font-size: 0.82rem;
+  color: #A5B4FC;
+  margin-bottom: 6px;
+}
+
+.dh-v5-popover-box p {
+  font-size: 0.75rem;
+  color: #E2E8F0;
+  line-height: 1.5;
+  margin: 0 0 8px;
+}
+
+.dh-v5-popover-comps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.dh-v5-drawer-toggle-btn {
+  font-size: 0.73rem;
+  font-weight: 700;
+  color: #FCD34D;
+  background: rgba(245, 158, 11, 0.14);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  padding: 4px 10px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.dh-v5-guide-drawer {
+  background: #0B1120;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 14px 20px;
+}
+
+.dh-v5-guide-drawer-grid {
+  max-width: 1640px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.drawer-guide-item {
+  background: rgba(30, 41, 59, 0.6);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  border-radius: 10px;
+  padding: 12px 14px;
+}
+
+.drawer-step-badge {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 800;
+  color: #A5B4FC;
+  background: rgba(99, 102, 241, 0.2);
+  padding: 2px 7px;
+  border-radius: 4px;
+  margin-bottom: 4px;
+}
+
+.drawer-guide-item strong {
+  display: block;
+  font-size: 0.82rem;
+  color: #FFFFFF;
+  margin-bottom: 4px;
+}
+
+.drawer-guide-item p {
+  font-size: 0.74rem;
+  color: #94A3B8;
+  line-height: 1.45;
+  margin: 0;
+}
+
+/* 4. Workspace Shell: Depth 3 SNB + Main Canvas */
+.dh-v5-workspace-shell {
+  display: grid;
+  grid-template-columns: 290px 1fr;
+  min-height: calc(100vh - 145px);
+  background: #0B1120;
+  transition: grid-template-columns 0.22s ease;
+}
+
+.dh-v5-workspace-shell.snb-collapsed {
+  grid-template-columns: 0px 1fr;
+}
+
+.dh-v5-workspace-shell.snb-collapsed .dh-v5-snb {
+  overflow: hidden;
+  border-right: none;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Depth 3: SNB (Side Navigation Bar) */
+.dh-v5-snb {
+  background: #0F172A;
+  border-right: 1px solid rgba(148, 163, 184, 0.18);
+  font-family: 'Pretendard Variable', Pretendard, sans-serif;
+  color: #F8FAFC;
+  transition: opacity 0.2s ease;
+}
+
+.dh-v5-snb-inner {
+  position: sticky;
+  top: 100px;
+  padding: 16px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-height: calc(100vh - 148px);
+  overflow-y: auto;
+}
+
+.dh-v5-snb-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.snb-eyebrow {
+  display: block;
+  font-size: 0.64rem;
+  font-weight: 800;
+  color: #818CF8;
+  letter-spacing: 0.05em;
+}
+
+.snb-title {
+  font-size: 0.88rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  margin: 2px 0 0;
+}
+
+.dh-v5-snb-section {
+  background: rgba(30, 41, 59, 0.55);
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  border-radius: 11px;
+  padding: 11px;
+}
+
+.snb-sec-label-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.snb-sec-label {
+  font-size: 0.74rem;
+  font-weight: 800;
+  color: #E2E8F0;
+}
+
+.snb-mini-action {
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: #A5B4FC;
+  background: rgba(99, 102, 241, 0.2);
+  border: 1px solid rgba(129, 140, 248, 0.35);
+  border-radius: 5px;
+  padding: 2px 7px;
+  cursor: pointer;
+}
+
+.dh-v5-snb-chip-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4px;
+  margin-top: 8px;
+  max-height: 155px;
+  overflow-y: auto;
+}
+
+.snb-quick-chip {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 7px;
+  border-radius: 6px;
+  background: rgba(15, 23, 42, 0.75);
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  color: #CBD5E1;
+  font-size: 0.69rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: all 0.14s ease;
+}
+
+.snb-quick-chip:hover {
+  border-color: #818CF8;
+  color: #FFFFFF;
+}
+
+.snb-quick-chip.active {
+  background: rgba(79, 70, 229, 0.28);
+  border-color: #818CF8;
+  color: #FFFFFF;
+  font-weight: 800;
+}
+
+.snb-quick-chip.active-layout {
+  background: rgba(16, 185, 129, 0.24);
+  border-color: #34D399;
+  color: #FFFFFF;
+  font-weight: 800;
+}
+
+.dh-v5-snb-details {
+  background: rgba(30, 41, 59, 0.45);
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  border-radius: 11px;
+  padding: 10px 12px;
+}
+
+.snb-details-summary {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.76rem;
+  font-weight: 800;
+  color: #E2E8F0;
+  cursor: pointer;
+}
+
+.snb-details-summary::-webkit-details-marker {
+  display: none;
+}
+
+.dh-v5-snb-ia-box {
+  margin-top: 9px;
+  padding-top: 9px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 0.72rem;
+  color: #CBD5E1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.dh-v5-snb-footer-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: auto;
+}
+
+.dh-v5-snb-cta-btn {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 8px;
+  font-size: 0.75rem;
+  font-weight: 800;
+  cursor: pointer;
+  border: 1px solid transparent;
+  text-align: center;
+  transition: all 0.15s ease;
+}
+
+.dh-v5-snb-cta-btn.primary {
+  background: rgba(79, 70, 229, 0.22);
+  border-color: rgba(129, 140, 248, 0.45);
+  color: #C7D2FE;
+}
+
+.dh-v5-snb-cta-btn.accent {
+  background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+  color: #064E3B;
+}
+
+/* 5. Main Content Canvas & Whitespace-First Stage Containers */
+.dh-v5-main-canvas {
+  min-width: 0;
+  background: #0B1120;
+}
+
+.dh-v5-stage-inner {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 24px 32px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  font-family: 'Pretendard Variable', Pretendard, sans-serif;
+  color: #F8FAFC;
+}
+
+.dh-v5-compact-header-card {
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.85) 0%, rgba(15, 23, 42, 0.92) 100%);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 16px;
+  padding: 20px 24px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.compact-header-left {
+  max-width: 780px;
+}
+
+.compact-badge-row {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.dh-v5-pill-badge {
+  font-size: 0.68rem;
+  font-weight: 800;
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: rgba(148, 163, 184, 0.15);
+  color: #CBD5E1;
+  border: 1px solid rgba(148, 163, 184, 0.25);
+}
+
+.dh-v5-pill-badge.primary {
+  background: rgba(99, 102, 241, 0.2);
+  color: #A5B4FC;
+  border-color: rgba(129, 140, 248, 0.4);
+}
+
+.dh-v5-pill-badge.accent {
+  background: rgba(16, 185, 129, 0.18);
+  color: #6EE7B7;
+  border-color: rgba(52, 211, 153, 0.4);
+}
+
+.dh-v5-tooltip-chip {
+  font-size: 0.69rem;
+  font-weight: 700;
+  color: #FCD34D;
+  background: rgba(245, 158, 11, 0.14);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  padding: 2px 8px;
+  border-radius: 999px;
+  cursor: help;
+}
+
+.dh-v5-page-title {
+  font-size: 1.32rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  letter-spacing: -0.02em;
+  margin: 0 0 5px;
+}
+
+.dh-v5-page-subtitle {
+  font-size: 0.83rem;
+  color: #94A3B8;
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* Guide Subview (LNB 1-3) */
+.dh-v5-guide-overview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.dh-v5-clean-card {
+  background: #131C31;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 16px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.clean-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.clean-card-num {
+  font-size: 0.68rem;
+  font-weight: 800;
+  color: #6EE7B7;
+  background: rgba(16, 185, 129, 0.16);
+  padding: 3px 8px;
+  border-radius: 6px;
+}
+
+.clean-card-head h3 {
+  font-size: 0.98rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  margin: 0;
+  flex: 1;
+}
+
+.clean-card-desc {
+  font-size: 0.81rem;
+  color: #CBD5E1;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.dh-v5-step-flow-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.step-flow-row {
+  background: rgba(15, 23, 42, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 10px;
+  padding: 9px 12px;
+}
+
+.step-flow-row strong {
+  display: block;
+  font-size: 0.8rem;
+  color: #A5B4FC;
+  margin-bottom: 2px;
+}
+
+.step-flow-row span {
+  font-size: 0.74rem;
+  color: #94A3B8;
+}
+
+.dh-v5-two-axis-boxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.axis-mini-box {
+  background: rgba(15, 23, 42, 0.75);
+  border-radius: 10px;
+  padding: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.axis-mini-box.style-box {
+  border-color: rgba(129, 140, 248, 0.35);
+}
+
+.axis-mini-box.layout-box {
+  border-color: rgba(52, 211, 153, 0.35);
+}
+
+.axis-mini-box strong {
+  display: block;
+  font-size: 0.78rem;
+  color: #FFFFFF;
+  margin-bottom: 6px;
+}
+
+.axis-mini-box ul {
+  margin: 0;
+  padding-left: 15px;
+  font-size: 0.73rem;
+  color: #CBD5E1;
+  line-height: 1.55;
+}
+
+/* Bottom Action Strip */
+.dh-v5-bottom-strip {
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.9) 0%, rgba(15, 23, 42, 0.95) 100%);
+  border: 1px solid rgba(99, 102, 241, 0.35);
+  border-radius: 14px;
+  padding: 16px 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.strip-left strong {
+  display: block;
+  font-size: 0.88rem;
+  color: #FFFFFF;
+  margin-bottom: 2px;
+}
+
+.strip-left span {
+  font-size: 0.78rem;
+  color: #94A3B8;
+}
+
+.strip-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.dh-v5-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 9px 16px;
+  border-radius: 9px;
+  font-size: 0.81rem;
+  font-weight: 800;
+  cursor: pointer;
+  border: none;
+  transition: all 0.16s ease;
+}
+
+.dh-v5-btn.primary {
+  background: linear-gradient(135deg, #4F46E5 0%, #2563EB 100%);
+  color: #FFFFFF;
+  box-shadow: 0 6px 18px rgba(79, 70, 229, 0.35);
+}
+
+.dh-v5-btn.secondary {
+  background: rgba(16, 185, 129, 0.16);
+  border: 1px solid rgba(52, 211, 153, 0.45);
+  color: #6EE7B7;
+}
+
+/* 6. GNB 2: IA Menu Tree, Component Registry & Layout Reflow Visualizer */
+.dh-v5-ia-reflow-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 22px;
+  align-items: start;
+}
+
+.dh-v5-ia-panel {
+  background: #131C31;
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  border-radius: 16px;
+  padding: 20px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ia-panel-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.ia-panel-head h3 {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+/* Visual Layout Slot Blueprint Map */
+.dh-v5-slot-blueprint {
+  background: #0B1120;
+  border: 2px solid rgba(99, 102, 241, 0.35);
+  border-radius: 14px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.slot-zone-box {
+  background: rgba(30, 41, 59, 0.7);
+  border: 1px dashed rgba(148, 163, 184, 0.35);
+  border-radius: 10px;
+  padding: 10px 12px;
+  transition: all 0.15s ease;
+}
+
+.slot-zone-box:hover {
+  border-color: #818CF8;
+  background: rgba(30, 41, 59, 0.95);
+}
+
+.slot-zone-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.slot-zone-label {
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: #A5B4FC;
+  letter-spacing: 0.03em;
+}
+
+.slot-zone-spec {
+  font-size: 0.72rem;
+  color: #94A3B8;
+}
+
+.slot-comp-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.ic-badge-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 9px;
+  border-radius: 6px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(129, 140, 248, 0.4);
+  color: #E2E8F0;
+  cursor: help;
+}
+
+.ic-badge-chip .ic-code {
+  color: #6EE7B7;
+  font-weight: 800;
+}
+
+.ic-badge-chip.feature-ic {
+  background: linear-gradient(135deg, rgba(236, 72, 153, 0.22) 0%, rgba(79, 70, 229, 0.25) 100%);
+  border-color: #F472B6;
+  color: #FFFFFF;
+}
+
+.slot-middle-split {
+  display: grid;
+  grid-template-columns: 210px 1fr;
+  gap: 10px;
+}
+
+.slot-middle-split.no-snb {
+  grid-template-columns: 1fr;
+}
+
+/* Menu Tree Diagram Cards (LNB 2-2) */
+.dh-v5-menutree-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+}
+
+.menutree-gnb-col {
+  background: #131C31;
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  border-radius: 14px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.menutree-gnb-col.active-col {
+  border: 2px solid #6366F1;
+  box-shadow: 0 10px 25px rgba(79, 70, 229, 0.2);
+}
+
+.menutree-gnb-node {
+  background: linear-gradient(135deg, #1E1B4B 0%, #312E81 100%);
+  border: 1px solid #6366F1;
+  border-radius: 10px;
+  padding: 12px;
+  cursor: pointer;
+}
+
+.menutree-lnb-node {
+  background: rgba(15, 23, 42, 0.8);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 8px;
+  padding: 9px 10px;
+  cursor: pointer;
+  transition: all 0.14s ease;
+}
+
+.menutree-lnb-node:hover {
+  border-color: #34D399;
+  transform: translateX(3px);
+}
+
+/* Component Registry Grid (LNB 2-3) */
+.dh-v5-comp-registry-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.dh-v5-ic-card {
+  background: #131C31;
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  border-radius: 14px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Preview Workspace (GNB 3) */
+.dh-v5-preview-workspace {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.dh-v5-detail-spec-col {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Filter Accordion in GNB 4 */
+.dh-v5-filter-accordion {
+  background: #131C31;
+  border: 1px solid rgba(129, 140, 248, 0.28);
+  border-radius: 14px;
+  padding: 12px 18px;
+}
+
+.dh-v5-filter-summary {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  cursor: pointer;
+  font-size: 0.84rem;
+  font-weight: 800;
+  color: #FFFFFF;
+}
+
+.dh-v5-filter-summary::-webkit-details-marker {
+  display: none;
+}
+
+.dh-v5-rec-inline {
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: #6EE7B7;
+}
+
+/* 7. Global Utility: FNB (Footer Navigation Bar) */
+.dh-v5-fnb {
+  background: #090E1A;
+  border-top: 1px solid rgba(99, 102, 241, 0.3);
+  font-family: 'Pretendard Variable', Pretendard, sans-serif;
+  color: #CBD5E1;
+  padding: 10px 20px;
+  position: relative;
+  z-index: 1500;
+}
+
+.dh-v5-fnb-inner {
+  max-width: 1640px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.dh-v5-fnb-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  font-size: 0.75rem;
+}
+
+.fnb-badge {
+  background: rgba(99, 102, 241, 0.2);
+  color: #A5B4FC;
+  font-size: 0.65rem;
+  font-weight: 800;
+  padding: 2px 7px;
+  border-radius: 4px;
+}
+
+.fnb-breadcrumb {
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+.fnb-divider {
+  color: #475569;
+}
+
+.fnb-comp-status {
+  color: #6EE7B7;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.dh-v5-fnb-links {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.fnb-link-btn {
+  background: rgba(30, 41, 59, 0.7);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  color: #CBD5E1;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.14s ease;
+}
+
+.fnb-link-btn:hover {
+  border-color: #818CF8;
+  color: #FFFFFF;
+}
+
+.dh-v5-fnb-cta {
+  background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+  color: #064E3B;
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 6px 14px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 1240px) {
+  .dh-v5-workspace-shell {
+    grid-template-columns: 1fr;
+  }
+  .dh-v5-snb {
+    border-right: none;
+    border-bottom: 1px solid rgba(148, 163, 184, 0.2);
+  }
+  .dh-v5-snb-inner {
+    position: static;
+    max-height: none;
+  }
+  .dh-v5-guide-overview-grid,
+  .dh-v5-ia-reflow-grid,
+  .dh-v5-menutree-grid,
+  .dh-v5-comp-registry-grid,
+  .dh-v5-preview-workspace,
+  .dh-v5-guide-drawer-grid {
+    grid-template-columns: 1fr;
+  }
+}

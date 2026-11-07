@@ -1,0 +1,265 @@
+# ==============================================================================
+# Design & Layout Studio (v5.0 IA) — Git Ignore Rules (.gitignore)
+# Prevents accidental commitment of personal credentials, sensitive secrets,
+# runtime caches, temporary artifacts, and private sync configurations.
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. Byte-compiled / Optimized / DLL files (Python 바이트코드 및 컴파일 캐시)
+# ------------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# ------------------------------------------------------------------------------
+# 2. Environments, Secrets, and Credentials (환경변수, 개인정보, 비밀키, 토큰)
+# ------------------------------------------------------------------------------
+.env
+*.env
+.env.*
+.env*.local
+*.local.env
+syncgithub.env
+syncgithub.py
+
+# 가상환경 디렉토리
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.conda/
+
+# 공개 가능한 안전한 환경변수 예제 템플릿 파일은 예외 보존
+!.env.example
+!app.env.example
+
+# 보안 인증서, 비밀키, SSH 키, API 키, 토큰 및 자격증명 파일
+*token*
+*.token
+token.txt
+tokens.json
+*secret*
+*.secret
+secrets.json
+*credential*
+credentials.json
+client_secret*.json
+service_account*.json
+*apikey*
+*api_key*
+*password*
+*passwd*
+*.pem
+*.key
+*.crt
+*.cer
+*.der
+*.p12
+*.pfx
+*.jks
+*.pub
+id_rsa*
+id_ed25519*
+id_ecdsa*
+known_hosts
+.netrc
+.npmrc
+.pypirc
+.aws/
+.ssh/
+.gnupg/
+
+# 개인정보(PII) 및 민감 데이터 파일 패턴
+*personal*
+*private*
+*sensitive*
+*.pii
+*.Dump
+*.dmp
+
+# ------------------------------------------------------------------------------
+# 3. Persistent Storage, Databases & Backups (로컬 DB, 백업 및 시드 복사본)
+# ------------------------------------------------------------------------------
+seed_data/
+storage/
+downloads/
+uploads/
+backups/
+backup/
+
+# SQLite 데이터베이스 및 트랜잭션 저널/WAL 파일
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+*.db-wal
+*.db-shm
+*.sqlite-journal
+*.sqlite3-journal
+*.sqlite-wal
+*.sqlite-shm
+*.sql
+*.dump
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# 기본 시드 메타데이터 JSON 3종은 보존하되, 로컬 백업/임시 JSON 파일은 제외
+data/*.bak
+data/*.tmp
+data/*_backup.json
+data/*_local.json
+!data/styles_metadata.json
+!data/layouts_metadata.json
+!data/twayworks_profile.json
+
+# ------------------------------------------------------------------------------
+# 4. Unit Test, Coverage Reports & Linter/Type Caches (테스트 산출물 및 도구 캐시)
+# ------------------------------------------------------------------------------
+.pytest_cache/
+.cache/
+.hypothesis/
+.coverage
+.coverage.*
+coverage.xml
+nosetests.xml
+htmlcov/
+cover/
+*.cover
+*.py,cover
+.tox/
+.nox/
+.mypy_cache/
+.ruff_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+cython_debug/
+.eslintcache
+.stylelintcache
+.parcel-cache/
+node_modules/
+
+# ------------------------------------------------------------------------------
+# 5. Distribution, Packaging & Archives (빌드 산출물 및 압축 패키지)
+# ------------------------------------------------------------------------------
+build/
+develop-eggs/
+dist/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+*.manifest
+*.spec
+pip-log.txt
+pip-delete-this-directory.txt
+
+# 동적 생성 또는 다운로드된 템플릿 아카이브 파일
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+
+# ------------------------------------------------------------------------------
+# 6. Temporary Files, Logs & Shell Histories (임시 파일, 로그, 쉘 기록)
+# ------------------------------------------------------------------------------
+*.log
+logs/
+log/
+scratch/
+tmp/
+temp/
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+*.orig
+*~
+*.swp
+*.swo
+*.swn
+*.pid
+*.seed
+*.pid.lock
+
+# 쉘 및 커맨드 히스토리 (민감 명령어 노출 방지)
+.bash_history
+.zsh_history
+.python_history
+.node_repl_history
+.lesshst
+.history
+.history/
+
+# 개발 노트 및 히스토리 문서는 예외 보존 (원치 않을 경우 notes/ 주석 해제)
+!notes/
+!notes/history.md
+
+# ------------------------------------------------------------------------------
+# 7. IDE, Editor, AI Agents & OS Metadata (에디터, AI 도구 캐시 및 OS 메타데이터)
+# ------------------------------------------------------------------------------
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sublime-project
+*.sublime-workspace
+.project
+.classpath
+.settings/
+
+# AI 코딩 어시스턴트 및 에이전트 로컬 설정/캐시
+.gemini/
+.cursor/
+.windsurf/
+.aider*
+.claude/
+.copilot/
+
+# macOS / Windows / Linux 운영체제 캐시 및 썸네일
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDouble
+.LSOverride
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# Jupyter / IPython
+.ipynb_checkpoints/
+profile_default/
+ipython_config.py

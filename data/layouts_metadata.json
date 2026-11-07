@@ -1,0 +1,432 @@
+{
+  "project": "Design Templates & Website Layout Helper System",
+  "version": "2.0.0",
+  "updated_at": "2026-11-06T20:05:26+09:00",
+  "total_layouts": 10,
+  "layouts": [
+    {
+      "id": "layout-01-ecommerce-grid",
+      "order": 1,
+      "domain_ko": "이커머스 (E-commerce / 쇼핑몰)",
+      "domain_en": "E-commerce & Online Store",
+      "name_ko": "멀티 필터 + 무한 스크롤 그리드",
+      "name_en": "Multi-Filter & Infinite Card Grid",
+      "representative_companies": [
+        "무신사 (Musinsa)",
+        "29CM",
+        "W컨셉 (W Concept)"
+      ],
+      "layout_structure": "상단 글로벌 내비게이션 + 멀티 카테고리 필터 + 무한 스크롤 그리드 바디",
+      "tagline": "다중 속성 필터링과 고밀도 상품 카드 그리드로 빠른 탐색과 구매 전환을 이끄는 커머스 표준 레이아웃",
+      "head_spec": {
+        "structure_name": "2단 커머스 통합 헤더 (통합 검색바 + 유틸 메뉴 + 1차 카테고리 탭)",
+        "description": "로고, 통합 검색바, 마이페이지/장바구니, 1차 카테고리(상의, 아우터 등 / 스낵앱 카테고리) 탭 배치.",
+        "elements": [
+          "브랜드 로고 (Logo)",
+          "실시간 통합 검색바 (Global Search Input)",
+          "마이페이지 / 찜목록 / 장바구니 카운터",
+          "1차 카테고리 탭 바 (전체, 베스트, 마케팅앱, 미디어앱, 예약/인증, AI지식화)"
+        ],
+        "behavior": "상단 고정(Sticky) 및 카테고리 탭 즉시 전환"
+      },
+      "body_spec": {
+        "structure_name": "좌측 다중 속성 필터 사이드바 + 우측 4열 상품 카드 그리드 바디",
+        "description": "좌측 또는 상단에 성별, 브랜드, 가격대, 할인율 등의 다중 필터 영역을 두고, 메인 바디는 상품 이미지, 브랜드명, 가격, 좋아요 수가 포함된 카드형 그리드(Grid) 스타일로 구성하여 스크롤하며 탐색하기 최적화되어 있습니다.",
+        "grid_template": "260px 1fr (모바일 1열 및 상단 칩 필터 전환)",
+        "elements": [
+          "좌측 다중 필터 패널 (타깃 업종, 핵심 엔진 브랜드, 가격/구축시간, 할인/무료지원율)",
+          "상단 정렬 바 (인기순, 최신순, 평점순, 혜택순) 및 검색 결과 수",
+          "4열 상품 카드 그리드 (썸네일, 랭킹 배지, 브랜드명, 상품명, 할인율/가격, ♥ 좋아요 카운트, 장바구니 담기)"
+        ]
+      },
+      "domain_keywords": ["이커머스", "쇼핑몰", "무신사", "커머스", "브랜드 스토어", "상품 판매", "편집샵", "공동구매"],
+      "recommended_styles": [
+        "style-01-minimal-essential",
+        "style-02-tech-neobrutalism",
+        "style-07-pop-creative"
+      ],
+      "sample_application_note": "TheWayWorks의 12종 프로덕션 스낵 앱과 4대 핵심 부품을 무신사 스토어처럼 '즉시 도입 가능한 비즈니스 앱 상품 카드'로 진열하고, 업종·엔진·가격대별 실시간 필터링 및 좋아요(♥)/장바구니 담기 UX를 제공합니다."
+    },
+    {
+      "id": "layout-02-ott-carousel",
+      "order": 2,
+      "domain_ko": "콘텐츠 스트리밍 & OTT",
+      "domain_en": "Content Streaming & OTT Platform",
+      "name_ko": "풀스크린 히어로 + 수평 스크롤 캐러셀",
+      "name_en": "Immersive Hero + Row-based Carousel",
+      "representative_companies": [
+        "넷플릭스 (Netflix)",
+        "왓챠 (Watcha)",
+        "티빙 (TVING)"
+      ],
+      "layout_structure": "몰입형 풀스크린 히어로 배너 + 수평 스크롤 캐러셀(Row-based Carousel) 바디",
+      "tagline": "시선을 압도하는 대형 영상/비주얼 히어로와 주제별 수평 슬라이딩 행(Row)으로 몰입감을 극대화하는 미디어 레이아웃",
+      "head_spec": {
+        "structure_name": "투명 그라데이션 미니멀 고정 헤더 (오버레이 GNB)",
+        "description": "투명 배경의 미니멀한 헤더(로고, 홈/시리즈/영화 메뉴, 검색, 프로필). 스크롤 시 배경색이 전환되는 고정형 내비게이션.",
+        "elements": [
+          "브랜드 심볼 & 워드마크",
+          "콘텐츠 분류 메뉴 (홈, 오리지널 시리즈, 스낵앱 무비, 대세 콘텐츠, 내가 찜한 리스트)",
+          "즉시 검색 아이콘 & 알림",
+          "사용자 프로필 아바타"
+        ],
+        "behavior": "히어로 상단 투명 오버레이 → 스크롤 시 다크 솔리드 배경 전환"
+      },
+      "body_spec": {
+        "structure_name": "와이드 빌보드 히어로 + 다중 수평 스크롤 캐러셀(Row) 스택",
+        "description": "최상단에는 주목도를 높이는 대형 비디오/이미지 히어로 배너(신작 소개)를 배치하고, 그 아래로는 '오늘 대한민국 TOP 10', '정주행하기 좋은 시리즈' 등 주제별로 콘텐츠 카드가 좌우로 무한 슬라이딩되는 수평 행(Row) 구조를 반복 배치합니다.",
+        "grid_template": "100% Full-bleed Hero + Horizontal Scroll Rows (overflow-x: auto)",
+        "elements": [
+          "풀스크린 오리지널 히어로 배너 (신작 타이틀, 99% 일치 배지, 줄거리, ▶ 재생 및 ⓘ 상세 정보 버튼)",
+          "Row 1: 오늘 대한민국 TOP 10 스낵 앱 (거대 아웃라인 숫자 1~10 + 포스터 카드 수평 슬라이더)",
+          "Row 2: 정주행하기 좋은 4대 핵심 미디어·인증 엔진 오리지널 (와이드 썸네일 카드)",
+          "Row 3: 1인 스냅 컴퍼니 창업가가 가장 많이 찜한 비즈니스 시리즈"
+        ]
+      },
+      "domain_keywords": ["OTT", "콘텐츠 스트리밍", "넷플릭스", "왓챠", "비디오", "영상 프로덕션", "미디어", "크리에이터"],
+      "recommended_styles": [
+        "style-05-dark-future-saas",
+        "style-08-luxury-prestige",
+        "style-00-twayworks-original"
+      ],
+      "sample_application_note": "FOTOSTREAM(9:16 쇼츠 자동 합성)과 VDSTREAM(무버퍼링 HLS 스트리밍)을 넷플릭스 오리지널 신작 히어로로 배치하고, 12종 스낵 앱을 '오늘 대한민국 TOP 10 시리즈' 수평 캐러셀로 탐색할 수 있게 구성합니다."
+    },
+    {
+      "id": "layout-03-entertainment-booking",
+      "order": 3,
+      "domain_ko": "엔터테인먼트 & 예매 플랫폼",
+      "domain_en": "Entertainment & Ticket Booking Platform",
+      "name_ko": "빠른 예매 바 고정형 + 탭 랭킹 리스트",
+      "name_en": "Sticky Quick-Booking Bar + Tabbed Ranking Chart",
+      "representative_companies": [
+        "메가박스 (Megabox)",
+        "CGV",
+        "인터파크 티켓 (Interpark)"
+      ],
+      "layout_structure": "빠른 예매 바(Bar) 고정형 + 탭 기반 랭킹/차트 리스트 바디",
+      "tagline": "상단 밀착형 빠른 예매 위젯과 직관적인 박스오피스 순위 차트로 즉각적인 예약·티켓팅 행동을 유도하는 레이아웃",
+      "head_spec": {
+        "structure_name": "엔터테인먼트 GNB + 밀착 고정형 '빠른 예매(Quick Booking)' 컨트롤 바",
+        "description": "사이트 로고, 주요 메뉴(영화, 예매, 이벤트, 극장)와 함께 하단으로 영화, 극장, 날짜를 즉시 선택할 수 있는 '빠른 예매' 위젯 바가 밀착 고정됩니다.",
+        "elements": [
+          "로고 및 주요 메뉴 (스낵앱 상영작, 빠른 개통예매, 프로모션 이벤트, 도입 파트너관)",
+          "밀착 고정형 빠른 예매 바: [1. 스낵앱 선택] + [2. 비즈니스 도메인(극장) 선택] + [3. 개통 희망일 선택] + [즉시 예매/개통 버튼]"
+        ],
+        "behavior": "헤더 하단에 빠른 예매 위젯 바가 일체형으로 고정되어 어느 위치에서든 3클릭 예약 가능"
+      },
+      "body_spec": {
+        "structure_name": "탭 기반 랭킹 차트(1~10위 포스터 그리드) + 예고편 트레일러 & 이벤트 모듈",
+        "description": "박스오피스 순위를 직관적으로 보여주는 숫자 랭킹(1~10위)과 포스터가 결합된 수평/수직 하이브리드 리스트를 제공하며, 예고편 영상 영역과 이벤트 배너가 모듈식으로 배치됩니다.",
+        "grid_template": "Ranking Poster Grid (4열) + Trailer & Event Split Module (1.3fr 0.7fr)",
+        "elements": [
+          "차트 전환 탭 (박스오피스 TOP 순위 / 상영 예정 스낵앱 / 특별 큐레이션관)",
+          "숫자 랭킹(NO.1 ~ NO.8) 배지 + 포스터 + 예매율(%) + 평점 + [바로 예매] 버튼 결합 카드",
+          "하단 모듈 1: 스낵 앱 실제 작동 하이라이트 예고편(Trailer) 영상 프리뷰",
+          "하단 모듈 2: 1인 기업 & 스마트 처치 특별 제휴 이벤트 배너"
+        ]
+      },
+      "domain_keywords": ["엔터테인먼트", "예매", "영화관", "메가박스", "CGV", "공연", "티켓", "이벤트 예약"],
+      "recommended_styles": [
+        "style-07-pop-creative",
+        "style-05-dark-future-saas",
+        "style-02-tech-neobrutalism"
+      ],
+      "sample_application_note": "상단 '빠른 스낵앱 개통 예매 바'에서 원하는 앱과 업종, 날짜를 선택해 즉시 티켓을 발권하듯 스낵앱을 신청하고, 박스오피스 차트(1~8위) 형태로 인기 스낵 앱과 예고편을 확인합니다."
+    },
+    {
+      "id": "layout-04-portal-3col-news",
+      "order": 4,
+      "domain_ko": "종합 포털 & 미디어 언론사",
+      "domain_en": "Web Portal & News Media",
+      "name_ko": "3단 컬럼 신문 편집 그리드",
+      "name_en": "3-Column Editorial Portal Grid",
+      "representative_companies": [
+        "네이버 뉴스 (Naver News)",
+        "조선일보",
+        "블룸버그 (Bloomberg)"
+      ],
+      "layout_structure": "3단 컬럼 그리드 (Left: 내비게이션/속보 / Center: 메인 뉴스 & 기사 / Right: 개인화 위젯)",
+      "tagline": "방대한 정보와 뉴스, 실시간 트렌드, 개인화 위젯을 한 화면에 질서 있게 집약하는 3단 포털 레이아웃",
+      "head_spec": {
+        "structure_name": "포털 통합 검색 헤더 + 실시간 이슈 키워드 바 + 서비스 섹션 탭",
+        "description": "통합 검색창, 실시간 이슈 키워드, 로그인 및 서비스 바로가기 탭.",
+        "elements": [
+          "포털 마스트헤드 로고 & 발행일자",
+          "중앙 대형 통합 검색창 (그린/프라이머리 보더 강조)",
+          "실시간 급상승 이슈 키워드 티커 (1위 VAIYER 자동배선, 2위 1인 스냅컴퍼니 등)",
+          "섹션 바로가기 탭 (전체뉴스, AI 기술속보, 스낵앱 실증, 오피니언, 사역나눔)"
+        ],
+        "behavior": "검색 중심 상단 헤더와 섹션 탭 분리"
+      },
+      "body_spec": {
+        "structure_name": "3단 비대칭 컬럼 그리드 (Left: 내비게이션/속보 / Center: 메인 뉴스 & 기사 / Right: 개인화 위젯)",
+        "description": "전통적인 신문 편집 레이아웃을 웹에 구현한 3단 레이아웃. 중앙에는 가장 비중 있는 메인 헤드라인 뉴스와 사진을 배치하고, 좌측에는 카테고리 메뉴나 속보를, 우측에는 날씨, 주식, 로그인 사용자 맞춤형 위젯이나 광고 배너를 배치합니다.",
+        "grid_template": "230px 1fr 290px (3-Column Portal Grid)",
+        "elements": [
+          "Left 컬럼: 분야별 뉴스 내비게이션 메뉴 + 시간대별 실시간 속보(Breaking News) 타임라인",
+          "Center 컬럼: 톱 헤드라인 기사(6컷 카툰 사진 + 요약) + 주요 기획 기사 리스트 + 포토 뉴스 브리핑",
+          "Right 컬럼: 로그인/기업 맞춤형 위젯 + 실시간 스낵앱 가동률(12종 100% 정상) 지수 보드 + 인기 기사 랭킹"
+        ]
+      },
+      "domain_keywords": ["포털", "미디어", "언론사", "뉴스", "네이버", "매거진", "커뮤니티 포털", "정보 플랫폼"],
+      "recommended_styles": [
+        "style-06-editorial-magazine",
+        "style-04-modern-trust-corporate",
+        "style-01-minimal-essential"
+      ],
+      "sample_application_note": "TheWayWorks의 기술 원리(VAIYER·Wisdom)와 12종 스낵앱 실증 사례를 '특집 헤드라인 뉴스'와 '실시간 기술 속보', 우측 '가동 현황 지수 위젯'으로 구성된 3단 미디어 포털 화면으로 보여줍니다."
+    },
+    {
+      "id": "layout-05-saas-workspace-split",
+      "order": 5,
+      "domain_ko": "기업형 대시보드 & SaaS 플랫폼",
+      "domain_en": "Enterprise Dashboard & SaaS Workspace",
+      "name_ko": "좌측 트리 사이드바 + 우측 대형 워크스페이스",
+      "name_en": "Left Tree Sidebar + Right Body Workspace",
+      "representative_companies": [
+        "잔디 (Jandi)",
+        "노션 (Notion)",
+        "슬랙 (Slack)"
+      ],
+      "layout_structure": "좌측 고정 사이드바(Tree Menu) + 우측 대형 작업 공간(Body Workspace)",
+      "tagline": "계층형 폴더·채널 트리 메뉴와 넓은 우측 문서·데이터 작업 공간으로 업무 생산성을 극대화하는 B2B SaaS 레이아웃",
+      "head_spec": {
+        "structure_name": "미니멀 워크스페이스 상단 바 (Workspace Topbar)",
+        "description": "별도의 상단 메뉴 대신 작업 공간(Workspace) 이름과 알림, 검색창이 포함된 미니멀한 상단 바.",
+        "elements": [
+          "워크스페이스 스위처 (TheWayWorks Workspace ▾) 및 현재 문서 경로(Breadcrumb)",
+          "커맨드 팔레트 검색바 (⌘K 빠른 문서·앱 검색)",
+          "실시간 협업 멤버 아바타 그룹, 알림 센터, [배포/공유] 액션 버튼"
+        ],
+        "behavior": "컴팩트한 48~56px 높이의 앱 헤더로 작업 공간 면적 극대화"
+      },
+      "body_spec": {
+        "structure_name": "좌측 고정 계층형 트리 메뉴(Tree Menu) + 우측 대형 작업 공간(Body Workspace)",
+        "description": "(b) 구조인 좌측-우측 분할 레이아웃으로, 좌측에는 폴더와 페이지, 채널 구조가 계층형 트리 메뉴(Tree Menu)로 구성되고, 우측 넓은 영역에는 선택한 콘텐츠나 문서, 데이터 테이블이 렌더링되는 생산성 최적화 구조입니다.",
+        "grid_template": "260px 1fr (Split App Shell)",
+        "elements": [
+          "좌측 사이드바: 즐겨찾기, 계층형 폴더/페이지 트리 (📁 VAIYER 파이프라인, 📁 Wisdom 지식 도서관, 📁 가동 중인 스낵앱 12채널)",
+          "우측 워크스페이스 상단: 문서 아이콘, 타이틀, 속성 메타데이터(상태, 담당 엔진, 엔드포인트), 뷰 전환 탭(테이블 뷰 / 보드 뷰 / 문서 뷰)",
+          "우측 워크스페이스 본문: 콜아웃 요약 블록 + 인터랙티브 데이터 테이블 및 실시간 문서 에디터 영역"
+        ]
+      },
+      "domain_keywords": ["SaaS", "대시보드", "노션", "슬랙", "잔디", "협업툴", "어드민", "업무 자동화", "B2B 솔루션"],
+      "recommended_styles": [
+        "style-09-clean-growth-bento",
+        "style-05-dark-future-saas",
+        "style-04-modern-trust-corporate"
+      ],
+      "sample_application_note": "노션/슬랙 스타일의 좌측 폴더·채널 트리 메뉴를 클릭하면 우측 대형 워크스페이스에 VAIYER 배선도, Wisdom Dual-TOC 지식 테이블, 12종 스낵 앱 운영 대시보드가 즉시 전환되어 렌더링됩니다."
+    },
+    {
+      "id": "layout-06-travel-map-split",
+      "order": 6,
+      "domain_ko": "종합 여행 & 숙박 예약 플랫폼",
+      "domain_en": "Travel & Hospitality Booking Platform",
+      "name_ko": "중앙 통합 검색 위젯 + 리스트/지도 2분할 스플릿",
+      "name_en": "Central Search Bar + Interactive List/Map Split",
+      "representative_companies": [
+        "야놀자 (Yanolja)",
+        "에어비앤비 (Airbnb)",
+        "여기어때"
+      ],
+      "layout_structure": "중앙 통합 검색 위젯 + 지도/리스트 인터랙티브 스플릿(Split) 바디",
+      "tagline": "직관적인 조건 검색 위젯과 카드 리스트·가격 마커 지도의 2분할 연동으로 공간·일정 탐색을 최적화한 예약 레이아웃",
+      "head_spec": {
+        "structure_name": "글로벌 호스피탈리티 헤더 + 알약형 통합 조건 검색 바",
+        "description": "로고, 언어/통화 설정, 고객센터 및 파트너 등록 메뉴.",
+        "elements": [
+          "브랜드 로고",
+          "중앙 알약형 통합 검색 위젯 (어디로 떠나시나요?[도메인] | 체크인[도입일] | 체크아웃[운영기간] | 인원[기업규모] + 🔍)",
+          "언어/통화 설정 (🌐 KR · ₩), 고객센터, '파트너 스낵앱 등록' 메뉴"
+        ],
+        "behavior": "상단 중앙 검색 위젯을 통해 탐색 조건을 즉시 필터링"
+      },
+      "body_spec": {
+        "structure_name": "좌측 카드형 숙소(솔루션) 리스트 + 우측 가격 표시 인터랙티브 지도(Map) 2분할 스플릿",
+        "description": "상단에 '어디로 떠나시나요?', '체크인/체크아웃', '인원'을 선택하는 강력한 통합 검색 바가 위치하며, 메인 바디는 사용자가 숙소를 탐색할 때 좌측에는 카드형 숙소 리스트, 우측에는 가격이 표시된 인터랙티브 지도(Map)가 동시에 노출되는 2분할 화면 구조를 가집니다.",
+        "grid_template": "1.1fr 0.9fr (Left Card Grid + Right Sticky Interactive Map)",
+        "elements": [
+          "좌측 영역: 카테고리 아이콘 필터 바 + 슈퍼호스트(검증 완료) 배지가 달린 2열 숙소형 스낵앱 카드 리스트",
+          "우측 영역: 가격/소요시간 캡슐 마커(₩무료지원, ⚡10초개통, ★4.98)가 표시된 인터랙티브 맵 캔버스 및 선택 카드 상세 프리뷰 팝업"
+        ]
+      },
+      "domain_keywords": ["여행", "숙박", "예약", "야놀자", "에어비앤비", "공간대여", "스튜디오 예약", "투어"],
+      "recommended_styles": [
+        "style-03-warm-artisan",
+        "style-07-pop-creative",
+        "style-09-clean-growth-bento"
+      ],
+      "sample_application_note": "에어비앤비/야놀자처럼 상단 통합 검색바에서 '업종 목적지·구축 일정·규모'를 선택하고, 좌측 스낵앱 스테이 카드를 클릭/호버하면 우측 인터랙티브 지도의 마커와 연동되어 상세 정보를 보여줍니다."
+    },
+    {
+      "id": "layout-07-edutech-curation-grid",
+      "order": 7,
+      "domain_ko": "IT 교육 & 온라인 강의 플랫폼",
+      "domain_en": "EdTech & Online Course Platform",
+      "name_ko": "카테고리 드롭다운 헤더 + 강의 카드 큐레이션 그리드",
+      "name_en": "Category Dropdown Header + Course Curation Grid",
+      "representative_companies": [
+        "인프런 (Inflearn)",
+        "패스트캠퍼스 (FastCampus)",
+        "클래스101 (Class101)"
+      ],
+      "layout_structure": "카테고리 드롭다운 헤더 + 카드형 큐레이션 그리드 바디",
+      "tagline": "체계적인 카테고리 탐색과 난이도·기술스택·평점 태그가 포함된 큐레이션 카드로 학습 선택을 돕는 에듀테크 레이아웃",
+      "head_spec": {
+        "structure_name": "에듀테크 카테고리 드롭다운 GNB + 지식공유자/수강생 액션 헤더",
+        "description": "로고, '강의 찾기' 드롭다운 메뉴, 커뮤니티, 지식공유자 신청 버튼 및 검색창.",
+        "elements": [
+          "로고 & '📚 강의/스낵앱 찾기 ▾' 카테고리 드롭다운 메뉴",
+          "로드맵, 멘토링/커뮤니티, Wisdom 지식공유자 신청 버튼",
+          "강의/기술 스택 통합 검색창 및 내 학습실 버튼"
+        ],
+        "behavior": "분야별 커리큘럼 드롭다운 및 키워드 즉시 검색 지원"
+      },
+      "body_spec": {
+        "structure_name": "상단 프로모션 배너 슬라이더 + 스킬 태그 바 + 4열 강의 카드 큐레이션 그리드",
+        "description": "메인 상단에는 배너 슬라이더(주목할 만한 신규 강의, 할인 프로모션)를 배치하고, 본문은 난이도, 기술 스택, 평점 등의 태그가 포함된 강의 카드 그리드 구조로 구성하여 수강생이 직관적으로 비교하고 선택할 수 있도록 설계됩니다.",
+        "grid_template": "Top Banner Carousel + Skill Tag Pills + 4-Column Course Card Grid",
+        "elements": [
+          "상단 와이드 프로모션 배너 슬라이더 (주목할 신규 파이프라인 과정 & 얼리버드 혜택, 슬라이드 전환 버튼)",
+          "기술 스택 & 난이도 필터 태그 (#전체, #입문-Vibe기획, #실전-VAIYER배선, #고급-Wisdom지식화, #미디어엔진)",
+          "강의형 스낵앱 카드 그리드 (썸네일, 난이도 배지, 기술 스택 태그, 별점 ★★★★★ 5.0, 도입 수강생 수, 수강/구축 신청 버튼)"
+        ]
+      },
+      "domain_keywords": ["교육", "온라인 강의", "인프런", "패스트캠퍼스", "에듀테크", "부트캠프", "코칭", "강사"],
+      "recommended_styles": [
+        "style-09-clean-growth-bento",
+        "style-04-modern-trust-corporate",
+        "style-03-warm-artisan"
+      ],
+      "sample_application_note": "TheWayWorks의 VAIYER 배선 원리, Wisdom 문서 지식화, 12종 스낵 앱을 인프런/패스트캠퍼스 스타일의 '실전 마스터 클래스 & 솔루션 카드(난이도·기술스택·별점 포함)'로 큐레이션하여 비교·선택할 수 있게 합니다."
+    },
+    {
+      "id": "layout-08-recruiting-career-feed",
+      "order": 8,
+      "domain_ko": "구인구직 & 채용 플랫폼",
+      "domain_en": "Recruiting & Career Matching Platform",
+      "name_ko": "직무 키워드 헤더 + 포지션 카드 & 연봉 계산기 복합 바디",
+      "name_en": "Job Keyword Header + Matched Position Grid & Insights Sidebar",
+      "representative_companies": [
+        "원티드 (Wanted)",
+        "사람인 (Saramin)",
+        "리멤버 (Remember)"
+      ],
+      "layout_structure": "직무 키워드 중심 헤더 + 맞춤형 포지션 카드 큐레이션 바디",
+      "tagline": "직무·기술 스택 기반 포지션 매칭 카드와 연봉/비용 계산기, 커리어 인사이트 아티클이 조화된 채용 플랫폼 레이아웃",
+      "head_spec": {
+        "structure_name": "직군/직무 키워드 태그 헤더 + 이력서/프리미엄 매칭 메뉴",
+        "description": "직군/직무별 태그 메뉴, 이력서 관리, 프리미엄 서비스 안내 및 검색바.",
+        "elements": [
+          "로고 및 직군/직무 카테고리 버튼 (전체 직군, AI 홍보·마케팅 봇, 미디어 편집 봇, 예약·영업 매니저, 문서 지혜화 연구원)",
+          "스냅컴퍼니 부서(이력서) 관리, AI 매칭 프리미엄 안내",
+          "포지션/기술 스택 검색창"
+        ],
+        "behavior": "직무 태그 클릭 시 해당 부서 역할의 스낵앱 포지션 즉시 필터링"
+      },
+      "body_spec": {
+        "structure_name": "좌측 맞춤형 포지션 매칭 카드 그리드 + 우측 연봉(외주비 절감) 계산기 & 인사이트 사이드바",
+        "description": "사용자의 커리어 프로필과 관심 기술 스택을 기반으로 매칭되는 포지션들을 카드 그리드 형태로 노출하며, 사이드 영역에는 연봉 정보 계산기나 커리어 인사이트 아티클을 배치하여 정보와 탐색 기능을 조화롭게 섞은 구조입니다.",
+        "grid_template": "1fr 340px (Main Matched Positions Grid + Right Calculator & Insights Sidebar)",
+        "elements": [
+          "메인 영역: 사용자 관심 스택 기반 'AI 디지털 부서원(스낵앱) 포지션 매칭 카드' (채용/도입 보상금 배지, 직무명, 매칭률 99%, 기술 스택 태그, 북마크)",
+          "우측 사이드바 1: 인터랙티브 '1인 기업 채용/외주비 절감 계산기' (대체할 직무 선택 시 연간 절감 금액 실시간 산출)",
+          "우측 사이드바 2: 커리어 & 1인 스냅 컴퍼니 인사이트 아티클 리스트"
+        ]
+      },
+      "domain_keywords": ["채용", "구인구직", "원티드", "사람인", "HR", "커리어", "헤드헌팅", "매칭 플랫폼"],
+      "recommended_styles": [
+        "style-04-modern-trust-corporate",
+        "style-09-clean-growth-bento",
+        "style-01-minimal-essential"
+      ],
+      "sample_application_note": "'직원 한 명 채용하는 대신 스낵 앱 디지털 부서원을 채용하세요!'라는 컨셉으로 홍보팀(VOGUE:M)·마케팅팀(FOTOSTREAM)·영업팀(/reserve) 포지션 매칭 카드와 우측 '연간 인건비/외주비 절감 계산기'를 인터랙티브하게 제공합니다."
+    },
+    {
+      "id": "layout-09-proptech-fullscreen-map",
+      "order": 9,
+      "domain_ko": "부동산 & 프롭테크 플랫폼",
+      "domain_en": "Real Estate & PropTech Map Platform",
+      "name_ko": "지도 중심 풀스크린 + 좌측 오버레이 슬라이드 패널",
+      "name_en": "Fullscreen Interactive Map + Floating Overlay Panel",
+      "representative_companies": [
+        "직방 (Zigbang)",
+        "다방 (Dabang)",
+        "호갱노노 (Hogangnono)"
+      ],
+      "layout_structure": "지도 중심의 풀스크린 레이아웃 + 오버레이 패널 구조",
+      "tagline": "화면 100%를 장악하는 인터랙티브 지도와 동적으로 갱신되는 좌측 오버레이 슬라이드 패널로 공간 탐색을 혁신하는 프롭테크 레이아웃",
+      "head_spec": {
+        "structure_name": "투명/반투명 플로팅 매물 유형 탭 & 지역 검색 헤더",
+        "description": "원룸/투룸, 아파트, 빌라 등 매물 유형 선택 탭과 지역 검색창이 포함된 투명/반투명 플로팅 헤더.",
+        "elements": [
+          "로고 & 매물(솔루션) 유형 선택 탭 (원룸형 단일스낵앱 / 투룸형 마케팅패키지 / 오피스형 기업AX / 스마트처치 단지)",
+          "지역/도메인 구역 검색창 및 평수(규모)·즉시입주(당일개통) 필터 버튼"
+        ],
+        "behavior": "지도 상단에 반투명 블러(Glassmorphism) 플로팅 바 형태로 고정"
+      },
+      "body_spec": {
+        "structure_name": "100% 풀스크린 인터랙티브 지도 캔버스 + 좌측 슬라이드 오버레이 매물 패널",
+        "description": "화면 전체를 카카오맵/네이버맵 등의 지도가 100% 장악하고 있으며, 사용자가 지도를 이동하거나 축소할 때마다 해당 구역의 매물 정보가 좌측 슬라이드 패널이나 지도 위 마커 가격 형태로 동적으로 갱신되는 지도 연동형 레이아웃입니다.",
+        "grid_template": "100% Fullscreen Map Canvas + Absolute Floating Left Panel (380px)",
+        "elements": [
+          "풀스크린 지도 캔버스: 도메인 구역별 클러스터 마커 및 가격/속도 말풍선 핀 (클릭 시 해당 구역/매물 선택)",
+          "좌측 오버레이 슬라이드 패널: 선택된 구역의 추천 매물(스낵앱) 리스트, 실사진 썸네일, 입주(개통) 조건, 상세 브리핑 Drawer",
+          "우측 하단 지도 줌(Zoom In/Out) 및 구역 이동 컨트롤러"
+        ]
+      },
+      "domain_keywords": ["부동산", "프롭테크", "직방", "다방", "지도", "입지 분석", "인테리어", "건축"],
+      "recommended_styles": [
+        "style-09-clean-growth-bento",
+        "style-04-modern-trust-corporate",
+        "style-02-tech-neobrutalism"
+      ],
+      "sample_application_note": "직방/다방처럼 화면 전체를 '스냅 컴퍼니 디지털 입지 지도'가 100% 채우고, 지도 위의 단지 마커(마케팅지구, 미디어지구, 스마트처치지구 등)를 클릭하거나 구역을 이동하면 좌측 오버레이 패널의 스낵 앱 매물 정보가 동적으로 갱신됩니다."
+    },
+    {
+      "id": "layout-10-brand-onepage-story",
+      "order": 10,
+      "domain_ko": "기업 브랜딩 & 포트폴리오 웹사이트",
+      "domain_en": "Corporate Branding & Storytelling Portfolio",
+      "name_ko": "원페이지 패럴랙스 스크롤링 + 스토리텔링 바디",
+      "name_en": "One-Page Parallax Scrolling + Vertical Storytelling",
+      "representative_companies": [
+        "토스 (Toss) 브랜드 페이지",
+        "애플 (Apple) 프로덕트 페이지",
+        "글로벌 테크 기업 소개 사이트"
+      ],
+      "layout_structure": "원페이지 스크롤링 (One-Page Parallax Scrolling) + 스토리텔링 바디",
+      "tagline": "초대형 타이포그래피와 섹션별 몰입형 스크롤 전환으로 비전·제품·문화를 하나의 감동적인 서사로 전달하는 브랜딩 레이아웃",
+      "head_spec": {
+        "structure_name": "미니멀 블러 고정 헤더 + 챕터 앵커 닷(Dot) 내비게이션",
+        "description": "스크롤 시 상단에 은은하게 나타나는 미니멀한 고정 헤더(로고 및 앵커 링크 메뉴).",
+        "elements": [
+          "미니멀 브랜드 로고",
+          "스토리 챕터 앵커 링크 (01 Vision · 02 VAIYER & Wisdom · 03 Live Proof · 04 Snap Company)",
+          "단일 하이라이트 액션 버튼 ('지금 시작하기')"
+        ],
+        "behavior": "스크롤 흐름을 방해하지 않는 은은한 글래스모피즘 고정 헤더"
+      },
+      "body_spec": {
+        "structure_name": "수직 원페이지 스토리텔링 & 패럴랙스 섹션 스택 (Full-Viewport Narrative)",
+        "description": "여러 페이지로 이동하는 전통적 구조에서 벗어나, 마우스 스크롤에 따라 화면이 섹션별로 전환되거나 역동적인 애니메이션(Parallax)이 작동하는 수직 스토리텔링 레이아웃. 비전, 제품 소개, 팀 문화, 채용 소식을 하나의 긴 흐름으로 전달하여 브랜드 임팩트를 극대화합니다.",
+        "grid_template": "Single-Column Full-Viewport Narrative Sections (100% Width Center-Aligned Impact)",
+        "elements": [
+          "Chapter 01 (Vision): 초대형 질문과 브랜드 매니페스토 ('왜 앱을 만드는 일은 늘 무겁고 비싸야 했을까요?')",
+          "Chapter 02 (Product): Vibe → Logical Wiring → Wisdom → VAIYER로 이어지는 인터랙티브 스토리 카드",
+          "Chapter 03 (Impact): 초대형 카운터 지표 (12종 실전 앱 · 0원 설치장벽 · 10초 개통)",
+          "Chapter 04 (Culture & Action): 1인 스냅 컴퍼니와 스마트 처치를 향한 마지막 초대 CTA"
+        ]
+      },
+      "domain_keywords": ["기업 브랜딩", "포트폴리오", "토스", "테크 기업", "브랜드 스토리", "원페이지", "랜딩페이지", "에이전시"],
+      "recommended_styles": [
+        "style-00-twayworks-original",
+        "style-05-dark-future-saas",
+        "style-08-luxury-prestige",
+        "style-01-minimal-essential"
+      ],
+      "sample_application_note": "토스(Toss) 브랜드 소개 페이지처럼 여백과 초대형 슬로건, 챕터별 패럴랙스 카드 전환을 통해 TheWayWorks의 비전(VAIYER·Snack App·Wisdom·Snap Company)을 하나의 강렬한 수직 서사로 전달합니다."
+    }
+  ]
+}
